@@ -1,0 +1,242 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, body > div {
+  width: 100%;
+  font-family: "微软雅黑"; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body > div header {
+  width: 1000px;
+  margin: 3% auto;
+  zoom: 1; }
+  body > div header:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  body > div header div {
+    float: left; }
+  body > div header ul {
+    float: left;
+    width: 600px;
+    margin-left: 10%; }
+    body > div header ul li {
+      float: left;
+      line-height: 70px; }
+      body > div header ul li a {
+        text-align: center;
+        display: inline-block;
+        padding: 0 10px;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        color: #333333; }
+  body > div header p {
+    float: right;
+    margin: -100px 60px 0 0; }
+    body > div header p a:nth-of-type(2) {
+      color: #551A8B; }
+body > div .on {
+  color: #FF8A00; }
+body > div .content .banner {
+  width: 100%;
+  margin-top: -3%;
+  overflow: hidden; }
+  body > div .content .banner ul {
+    width: 400%; }
+    body > div .content .banner ul li {
+      float: left;
+      width: 25%; }
+      body > div .content .banner ul li img {
+        width: 100%; }
+body > div .content .top {
+  text-align: center;
+  width: 93px;
+  height: 62px;
+  background: #E60012;
+  border-radius: 5px;
+  padding-top: 3px;
+  position: fixed;
+  top: 50%;
+  right: 60px; }
+  body > div .content .top a {
+    color: #fff;
+    font-size: 18px; }
+body > div .content .recruit {
+  width: 74%;
+  margin: 38px auto; }
+  body > div .content .recruit > p {
+    width: 100%;
+    border-bottom: 1px solid #A70A0B;
+    color: #FF8A00;
+    font-size: 28px;
+    padding-bottom: 20px; }
+  body > div .content .recruit ul {
+    margin-top: 20px; }
+    body > div .content .recruit ul li {
+      line-height: 40px; }
+      body > div .content .recruit ul li input[type=text], body > div .content .recruit ul li select {
+        width: 303px;
+        height: 30px;
+        border: 1px solid #CBCBCB; }
+      body > div .content .recruit ul li select {
+        font-size: 14px; }
+      body > div .content .recruit ul li span {
+        color: #FF8A00;
+        display: inline-block; }
+      body > div .content .recruit ul li label {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 5px 0 25px;
+        border: 1px solid #C0C0C0;
+        background: linear-gradient(#DEDEDE 30%, #EDEDED 30%, #fff); }
+      body > div .content .recruit ul li input[type=radio] {
+        display: none;
+        margin-left: 20px; }
+      body > div .content .recruit ul li input:checked + label {
+        background: #FF8A00; }
+      body > div .content .recruit ul li button {
+        width: 206px;
+        height: 46px;
+        background: #383838;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: "微软雅黑";
+        float: right; }
+      body > div .content .recruit ul li:nth-of-type(6) {
+        margin-top: 20px; }
+        body > div .content .recruit ul li:nth-of-type(6) span {
+          margin-right: 80px;
+          margin-left: 70px; }
+body > div .content .application {
+  width: 100%;
+  margin-top: 85px;
+  background: #F8F8F8;
+  height: 510px; }
+  body > div .content .application > div {
+    width: 74%;
+    margin: 38px auto; }
+    body > div .content .application > div > p {
+      width: 1000px;
+      border-bottom: 1px solid #A70A0B;
+      color: #FF8A00;
+      font-size: 28px;
+      padding-bottom: 20px;
+      padding-top: 40px; }
+    body > div .content .application > div > ul {
+      width: 1000px;
+      margin-top: 25px; }
+      body > div .content .application > div > ul li {
+        width: 17%;
+        float: left;
+        margin-left: 10%; }
+        body > div .content .application > div > ul li:nth-of-type(1) {
+          margin: 0; }
+        body > div .content .application > div > ul li span {
+          display: inline-block;
+          line-height: 26px; }
+body > div .content .cooperation {
+  width: 74%;
+  margin: 38px auto;
+  height: 650px; }
+  body > div .content .cooperation p {
+    width: 1000px;
+    border-bottom: 1px solid #A70A0B;
+    color: #FF8A00;
+    font-size: 28px;
+    padding-bottom: 20px;
+    padding-top: 40px; }
+  body > div .content .cooperation ul {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 15px; }
+    body > div .content .cooperation ul li {
+      float: left;
+      width: 20%;
+      text-align: center;
+      margin-top: 30px; }
+body > div footer {
+  height: 165px;
+  width: 100%;
+  background: #5B5B5B;
+  padding-top: 20px; }
+  body > div footer > div {
+    width: 1050px;
+    margin: 0 auto;
+    height: 80%; }
+    body > div footer > div > ul {
+      border-right: 1px solid #868686;
+      float: left;
+      height: 100%;
+      padding-left: 60px;
+      padding-right: 60px; }
+      body > div footer > div > ul li {
+        margin-top: 10px;
+        width: 80px;
+        text-align: center; }
+        body > div footer > div > ul li a {
+          color: #fff; }
+        body > div footer > div > ul li a:hover {
+          color: #FF8A00; }
+        body > div footer > div > ul li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 10px 0 15px 0; }
+    body > div footer > div > div {
+      width: 445px;
+      float: right; }
+      body > div footer > div > div > ul:nth-of-type(1) {
+        float: left;
+        color: #fff;
+        padding-left: 80px; }
+        body > div footer > div > div > ul:nth-of-type(1) li span {
+          display: inline-block;
+          width: 26px;
+          height: 22px;
+          background: url("../img/xin.png") no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5px; }
+        body > div footer > div > div > ul:nth-of-type(1) li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 0 0 5px 28px; }
+        body > div footer > div > div > ul:nth-of-type(1) li:nth-of-type(2) {
+          margin: 0 0 0 20px; }
+      body > div footer > div > div > ul:nth-of-type(2) {
+        float: left;
+        padding-left: 80px; }
+        body > div footer > div > div > ul:nth-of-type(2) li {
+          width: 145px;
+          text-align: center;
+          margin-top: 15px; }
+          body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(1) {
+            font-size: 20px;
+            font-weight: 600;
+            color: #FF8A00;
+            margin-top: 10px; }
+          body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(2), body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(3) {
+            font-size: 16px;
+            color: #fff; }
+body > div .copyright {
+  height: 47px;
+  background: #333333;
+  color: #fff;
+  width: 100%;
+  line-height: 47px;
+  text-align: center; }
+  body > div .copyright span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../img/baidu.png") no-repeat; }
+
+/*# sourceMappingURL=css.css.map */

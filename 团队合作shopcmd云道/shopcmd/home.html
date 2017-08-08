@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+		<script src="dist/js/jquery.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/shop-l.css" />
+		<link rel="stylesheet" href="dist1/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<style>
+			.swiper-container {
+				width: 910px;
+				height: 300px;
+				margin-top: 80px;
+				margin-left: 50px;
+				position: relative;
+				left: -6%;
+			}
+			
+			.swiper-container img {
+				width: 300px;
+				height: 211px;
+			}
+			
+			.swiper-container .swiper-button-next,
+			.swiper-container .swiper-button-prev {
+				width: 55px;
+				height: 55px;
+				display: inline-block;
+				background-color: #e1e1e1;
+				color: white;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 38px;
+				position: absolute;
+				top: 35%;
+			}
+			.swiper-wrapper{
+			}
+			
+			.swiper-slide {
+				/*font-size: 18px;*/
+				width: 323px;
+				height: 211px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="head">
+			<a href="#" class="user" id="user">
+				用户中心
+				<span class="fa fa-fw fa-chevron-down" id="xia1"></span><span class="fa fa-fw fa-chevron-up" id="shang1"></span>
+			</a>
+			<img src="img/logo.png"/>
+			<ul>
+				<li><a href="../shopcmd/home.html">首页</a></li>
+				<li><a href="" id="yun">云道商城<span class="fa fa-fw fa-chevron-down" id="xia"></span><span class="fa fa-fw fa-chevron-up" id="shang"></a></li>
+				<li><a href="../shop/shop-n.html">智慧门店</a></li>
+				<li><a href="../cmd/sell.html">营销平台</a></li>
+				<li><a href="#">媒体联盟</a></li>
+				<li><a href="../heip/help.html">关于云道</a></li>
+			</ul>
+		</div>
+		
+		<!--下拉菜单用户中心-->
+				<div id="zhongxin">
+					<ul>
+						<li><a href="#">官方商城管理</a></li>
+						<li><a href="#">媒体管理</a></li>
+						<li><a href="#">第三方商城营销管理</a></li>
+					</ul>
+					<span></span>
+				</div>
+		
+		
+		<!--下拉菜单-->
+		<div class="menu" id="menu">
+			<span></span>
+			<h2>云商城产品</h2>
+			<ul>
+				<li>
+					<h3><a href="../cmd/website.html">官网云商城</a></h3>
+					<p>免费、简单、高逼格、适合于中小企业的官方快捷商城系统</p>
+				</li>
+				<li>
+					<h3><a href="shop-y.html">品牌综合商城</a></h3>
+					<p>个性化前段，免费运维，适用于大中型企业的全功能云电商系统</p>
+				</li>
+				<li>
+					<h3><a href="#">多店铺品牌商城</a></h3>
+					<p>前后台分离，简约的系统，全渠道营销，为客户量身定制的生态级云电商平台</p>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		<div class="content">
+			<!--banner-->
+			<div id="banner">
+				<ul id="pics">
+					<li><img src="img/1-1banner.png" alt="" /></li>
+					<li><img src="img/1-2banner.png" alt="" /></li>
+					<li><img src="img/1-3banner.png" alt="" /></li>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+			<!--我们的服务-->
+			<div class="box">
+				<p id="p1">
+					我们的服务<br />
+					<label>PPOGRAM HIGHLIGHTS</label>
+				</p>
+				<p class="p2">
+					shopcmd云道，国内领先的独立电商解决方案及全渠道营销平台。完整的产品体系，简约的系统，个性化前端，全覆盖多渠道营销体系...
+				</p>
+				<p class="p3">
+					我们致力于打造一个服务于品牌商城/独立电商的完整生态，让企业的独立电商之路变得更简单，也更有价值！
+				</p>
+				<ul>
+					<li>
+						<img src="img/1.png" alt="" />
+						<h2>我是买家</h2>
+						<p>
+							<label>
+							云道不断完善的营销系统，联合优质媒体资源，集成常用的网络营销模式及终端，以最简单的产品形态，帮助独立商城实现店铺及商品信息在全网的快速分销。			
+							</label>
+						</p>
+						<a href="#">我要建站</a>
+						
+					</li>
+					<li>
+						<img src="img/2.png" alt="" />
+						<h2>我要营销</h2>
+						<p>
+							<label>
+							云道不断完善的营销系统，联合优质媒体资源，集成常用的网络营销模式及终端，以最简单的产品形态，帮助独立商城实现店铺及商品信息在全网的快速分销。			
+							</label>
+						</p>
+						<a href="#">我要推广</a>
+						
+					</li>
+					<li>
+						<img src="img/3.png" alt="" />
+						<h2>媒体合作</h2>
+						<p>
+							<label>
+							云道不断完善的营销系统，联合优质媒体资源，集成常用的网络营销模式及终端，以最简单的产品形态，帮助独立商城实现店铺及商品信息在全网的快速分销。			
+							</label>
+						</p>
+						<a href="#">我要合作</a>
+					</li>
+				</ul>
+			</div>
+			<div id="box1">
+				<br />
+				<div id="title">
+					<p id="p11">
+						经典案例<br />
+						<label>THE CLASSIC CASE</label>
+					</p>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/4.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/5.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/6.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/4.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/5.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/6.png" alt="" />
+							</div>
+						</div>
+						<!--<img src="img/jts.jpg" alt="" class="swiper-button-next"/>-->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+
+			</div>
+			<!--媒体合作-->
+			<div class="box1">
+				<p id="p1111">
+					合作媒体<br />
+					<label>ASSOCIATED MEDIA</label>
+				</p>
+				<ul>
+					<li id="lili">
+						<p id="tb">
+							<img src="img/8.png" class="xiaoshi" style="display: none;"/>
+							<img src="img/12.png" alt="" class="chuxian"/>
+						</p>
+							
+						<p id="jd">
+							<img src="img/jd.png" class="xiaoshi1" style="display: none;"/>
+							<img src="img/9.png" class="chuxian1"/>							
+						</p>
+						<p id="sp">
+							<img src="img/10.png" class="chuxian2"/>
+							<img src="img/sp.png" class="xiaoshi2" style="display: none;"/>
+						</p>
+						<p id="al">
+							<img src="img/7.png" class="chuxian3"/>
+							<img src="img/al.png" class="xiaoshi3" style="display: none;"/>
+						</p>
+						<p class="last" id="zk">
+							<img src="img/11.png" class="chuxian4"/>
+							<img src="img/zk.png" alt="" class="xiaoshi4" style="display: none;"/>
+						</p>
+					</li>
+					<li id="lili1">
+						<p id="tb1"><img src="img/8.png" class="xiaoshi5" style="display: none;"/>
+							<img src="img/12.png" alt="" class="chuxian5"/></p>
+						<p id="jd1">
+							<img src="img/jd.png" class="xiaoshi6" style="display: none;"/>
+							<img src="img/9.png" class="chuxian6"/>
+						</p>
+						<p id="sp1">
+							<img src="img/10.png" class="chuxian7"/>
+							<img src="img/sp.png" class="xiaoshi7" style="display: none;"/>
+						</p>
+						<p id="al1">
+							<img src="img/7.png" class="chuxian8"/>
+							<img src="img/al.png" class="xiaoshi8" style="display: none;"/>
+						</p>
+						<p class="last" id="zk1">
+							<img src="img/11.png" class="chuxian9"/>
+							<img src="img/zk.png" alt="" class="xiaoshi9" style="display: none;"/>
+						</p>
+					</li>
+					<li class="ll" id="lili3">
+						<p id="tb2"><img src="img/8.png" class="xiaoshi31" style="display: none;"/>
+							<img src="img/12.png" alt="" class="chuxian31"/></p>
+						<p id="jd2">
+							<img src="img/jd.png" class="xiaoshi32" style="display: none;"/>
+							<img src="img/9.png" class="chuxian32"/></p>
+						<p id="sp2">
+							<img src="img/10.png" class="chuxian33"/>
+							<img src="img/sp.png" class="xiaoshi33" style="display: none;"/>
+						</p>
+						<p id="al2">
+							<img src="img/7.png" class="chuxian34"/>
+							<img src="img/al.png" class="xiaoshi34" style="display: none;"/>
+						</p>
+						<p class="last" id="zk2">
+							<img src="img/11.png" class="chuxian35"/>
+							<img src="img/zk.png" alt="" class="xiaoshi35" style="display: none;"/>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--返回顶部-->
+		<div class="gundongtiao">
+    		<a href="#">
+        		<img src="img/gundongtiao.png">
+        		<p>联系咨询</p>
+    		</a>
+		</div>
+		
+		<div class="flooter">
+			<ul>
+				<li>
+					<a href="#">shopcmd</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">官网云商城</a>
+				</li>
+				<li>
+					<a href="#">智慧门店</a>
+				</li>
+				<li>
+					<a href="#">营销平台</a>
+				</li>
+				<li>
+					<a href="#">媒体联盟</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>
+					<img src="img/te.jpg" />
+					<span>4008-188-360</span>
+				</li>
+			</ul>
+			<p>©Copyright 2015 苏州海云网络科技有限公司版权所有 | 苏ICP备15038170号-3 </p>
+		</div>
+	</body>
+
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+<script src="dist1/js/swiper.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		slidesPerView: 3,
+		//      centeredSlides: true,
+		paginationClickable: true,
+		spaceBetween: 30,
+	});
+	$("#yun").click(function(e){
+		
+		e.preventDefault();
+		if($("#menu").css("display")=="none"){
+			$("#menu").css("display","block");
+		}else{
+			$("#menu").css("display","none");
+		}
+		
+		
+		if($("#xia").css("display")=="none" || $("#shang").css("display")=="inline-block"){
+			$("#xia").css("display","inline-block");
+			$("#shang").css("display","none");
+		}else{
+			$("#xia").css("display","none");
+			$("#shang").css("display","inline-block");
+		}
+		
+		
+	})
+	
+	
+	$("#user").click(function(){
+		
+		
+		if($("#zhongxin").css("display")=="none"){
+			$("#zhongxin").css("display","block");
+		}else{
+			$("#zhongxin").css("display","none");
+		}
+		
+		
+		if($("#xia1").css("display")=="none" || $("#shang1").css("display")=="inline-block"){
+			$("#xia1").css("display","inline-block");
+			$("#shang1").css("display","none");
+		}else{
+			$("#xia1").css("display","none");
+			$("#shang1").css("display","inline-block");
+		}
+		
+		
+	})
+	
+	$('.box>ul>li>p>label').hover(function(){
+		$(this).css({"background":"white","color":"#ff9412"})
+	},function(){
+		$(this).css({"background":"white","color":"#666666"})
+	})
+	$('.box>ul>li>img').hover(function(){
+		$(this).css("transform","translateY(-10px)")
+	},function(){
+		$(this).css("transform","translateY(0)")
+	})
+	$('.box>ul>li>a').hover(function(){
+		$(this).css({"background":"orange","color":"white"})
+	},function(){
+		$(this).css({"background":"white","color":"orange"})
+	})
+	//返回顶部js效果
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.gundongtiao').fadeIn();
+        } else {
+            $('.gundongtiao').fadeOut();
+        }
+    });
+    $('.gundongtiao').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop : 0},1000);
+        return false;
+    });
+    $('.box1>ul>#lili>#tb>img').hover(function(){
+    	
+    	$('.chuxian').hide();
+    	$('.xiaoshi').show();
+    },function(){
+    	$('.chuxian').show();
+    	$('.xiaoshi').hide();
+    })
+    $('.box1>ul>#lili>#jd>img').hover(function(){
+    	
+    	$('.chuxian1').hide();
+    	$('.xiaoshi1').show();
+    },function(){
+    	$('.chuxian1').show();
+    	$('.xiaoshi1').hide();
+    })
+    $('.box1>ul>#lili>#sp>img').hover(function(){
+    	
+    	$('.chuxian2').hide();
+    	$('.xiaoshi2').show();
+    },function(){
+    	$('.chuxian2').show();
+    	$('.xiaoshi2').hide();
+    })
+    $('.box1>ul>#lili>#al>img').hover(function(){
+    	
+    	$('.chuxian3').hide();
+    	$('.xiaoshi3').show();
+    },function(){
+    	$('.chuxian3').show();
+    	$('.xiaoshi3').hide();
+    })
+    $('.box1>ul>#lili>#zk>img').hover(function(){
+    	
+    	$('.chuxian4').hide();
+    	$('.xiaoshi4').show();
+    },function(){
+    	$('.chuxian4').show();
+    	$('.xiaoshi4').hide();
+    })
+    
+    
+    
+    $('.box1>ul>#lili1>#tb1>img').hover(function(){
+    	
+    	$('.chuxian5').hide();
+    	$('.xiaoshi5').show();
+    },function(){
+    	$('.chuxian5').show();
+    	$('.xiaoshi5').hide();
+    })
+    $('.box1>ul>#lili1>#jd1>img').hover(function(){
+    	
+    	$('.chuxian6').hide();
+    	$('.xiaoshi6').show();
+    },function(){
+    	$('.chuxian6').show();
+    	$('.xiaoshi6').hide();
+    })
+    $('.box1>ul>#lili1>#sp1>img').hover(function(){
+    	
+    	$('.chuxian7').hide();
+    	$('.xiaoshi7').show();
+    },function(){
+    	$('.chuxian7').show();
+    	$('.xiaoshi7').hide();
+    })
+    $('.box1>ul>#lili1>#al1>img').hover(function(){
+    	
+    	$('.chuxian8').hide();
+    	$('.xiaoshi8').show();
+    },function(){
+    	$('.chuxian8').show();
+    	$('.xiaoshi8').hide();
+    })
+    $('.box1>ul>#lili1>#zk1>img').hover(function(){
+    	
+    	$('.chuxian9').hide();
+    	$('.xiaoshi9').show();
+    },function(){
+    	$('.chuxian9').show();
+    	$('.xiaoshi9').hide();
+    })
+    
+    
+    
+    
+    
+    $('.box1>ul>#lili3>#tb2>img').hover(function(){
+    	
+    	$('.chuxian31').hide();
+    	$('.xiaoshi31').show();
+    },function(){
+    	$('.chuxian31').show();
+    	$('.xiaoshi31').hide();
+    })
+    $('.box1>ul>#lili3>#jd2>img').hover(function(){
+    	
+    	$('.chuxian32').hide();
+    	$('.xiaoshi32').show();
+    },function(){
+    	$('.chuxian32').show();
+    	$('.xiaoshi32').hide();
+    })
+    $('.box1>ul>#lili3>#sp2>img').hover(function(){
+    	
+    	$('.chuxian33').hide();
+    	$('.xiaoshi33').show();
+    },function(){
+    	$('.chuxian33').show();
+    	$('.xiaoshi33').hide();
+    })
+    $('.box1>ul>#lili3>#al2>img').hover(function(){
+    	
+    	$('.chuxian34').hide();
+    	$('.xiaoshi34').show();
+    },function(){
+    	$('.chuxian34').show();
+    	$('.xiaoshi34').hide();
+    })
+    $('.box1>ul>#lili3>#zk2>img').hover(function(){
+    	
+    	$('.chuxian35').hide();
+    	$('.xiaoshi35').show();
+    },function(){
+    	$('.chuxian35').show();
+    	$('.xiaoshi35').hide();
+    })
+    
+    
+    
+</script>

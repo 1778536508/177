@@ -1,0 +1,51 @@
+[
+	{
+		"name":"ul1",
+		"class":"false",
+		"text1": "集群通介绍",
+		"text2": "什么是集群通？",
+		"text3": "产品特点",
+		"text4": "技术优势",
+		"text5": "目标客户"
+	}, {
+		"name":"ul2",
+		"class":"true",
+		"text1": "智能终端",
+		"text2": "集群通行业定制终端",
+		"text3": "集群通配件",
+		"text4": "管理平台",
+		"text5": ""
+	}, {
+		"name":"ul3",
+		"class":"false",
+		"text1": "产品购买",
+		"text2": "如何购买",
+		"text3": "",
+		"text4": "",
+		"text5": ""
+	}, {
+		"name":"ul4",
+		"class":"false",
+		"text1": "下载体验",
+		"text2": "申请体验账号",
+		"text3": "",
+		"text4": "",
+		"text5": ""
+	}, {
+		"name":"ul5",
+		"class":"false",
+		"text1": "渠道合作",
+		"text2": "渠道招募",
+		"text3": "典型应用",
+		"text4": "合作伙伴",
+		"text5": ""
+	}, {
+		"name":"ul6",
+		"class":"false",
+		"text1": "问题帮助",
+		"text2": "",
+		"text3": "",
+		"text4": "",
+		"text5": ""
+	}
+]

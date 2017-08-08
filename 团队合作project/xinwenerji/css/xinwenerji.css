@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
+
+header {
+  width: 1000px;
+  margin: 3% auto;
+  zoom: 1; }
+  header:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  header div {
+    float: left; }
+  header ul {
+    float: left;
+    width: 600px;
+    margin-left: 10%; }
+    header ul li {
+      float: left;
+      line-height: 70px; }
+      header ul li a {
+        text-align: center;
+        display: inline-block;
+        padding: 0 10px;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        color: #333333; }
+  header p {
+    float: right;
+    margin: -100px 60px 0 0; }
+    header p a:nth-of-type(2) {
+      color: #551A8B; }
+
+.on {
+  color: #FF8A00; }
+
+.tupian {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -3%; }
+  .tupian ul {
+    width: 400%; }
+    .tupian ul li {
+      float: left;
+      width: 25%; }
+      .tupian ul li img {
+        width: 100%; }
+
+.xinwen {
+  width: 1000px;
+  height: 1800px;
+  margin: 0 auto; }
+  .xinwen header {
+    padding-top: 31px;
+    padding-bottom: 35px;
+    color: #ff8a00;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left; }
+  .xinwen ul {
+    width: 100%; }
+    .xinwen ul .li1 {
+      border-top: 1px solid #a70a0b; }
+    .xinwen ul li {
+      position: relative;
+      border-bottom: 1px solid #6d6d6d; }
+      .xinwen ul li > :nth-child(1) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: #404040;
+        font-size: 18px; }
+      .xinwen ul li > :nth-child(2) {
+        line-height: 25px;
+        padding-bottom: 55px; }
+      .xinwen ul li > :nth-child(3) {
+        position: absolute;
+        right: -5px;
+        bottom: 5px; }
+  .xinwen .fenye {
+    width: 100%;
+    height: 100px; }
+    .xinwen .fenye ul {
+      width: 100%;
+      margin-top: 40px;
+      margin-left: 280px; }
+      .xinwen .fenye ul .li1 {
+        background-color: #ff8a00; }
+      .xinwen .fenye ul li {
+        width: 25px;
+        height: 25px;
+        border-radius: 4%;
+        border: 1px solid #b2b2b2;
+        float: left;
+        margin-right: 12px;
+        text-align: center;
+        line-height: 25px; }
+
+footer {
+  height: 165px;
+  width: 100%;
+  margin-top: 75px;
+  background: #5B5B5B;
+  padding-top: 20px; }
+  footer > div {
+    width: 1050px;
+    margin: 0 auto;
+    height: 80%; }
+    footer > div > ul {
+      border-right: 1px solid #868686;
+      float: left;
+      height: 100%;
+      padding-left: 60px;
+      padding-right: 60px; }
+      footer > div > ul li {
+        margin-top: 10px;
+        width: 80px;
+        text-align: center; }
+        footer > div > ul li a {
+          color: #fff; }
+        footer > div > ul li a:hover {
+          color: #FF8A00; }
+        footer > div > ul li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 10px 0 15px 0; }
+    footer > div > div {
+      width: 445px;
+      float: right; }
+      footer > div > div > ul:nth-of-type(1) {
+        float: left;
+        color: #fff;
+        padding-left: 80px; }
+        footer > div > div > ul:nth-of-type(1) li span {
+          display: inline-block;
+          width: 26px;
+          height: 22px;
+          background: url("../img/xin.png") no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5px; }
+        footer > div > div > ul:nth-of-type(1) li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 0 0 5px 28px; }
+        footer > div > div > ul:nth-of-type(1) li:nth-of-type(2) {
+          margin: 0 0 0 20px; }
+      footer > div > div > ul:nth-of-type(2) {
+        float: left;
+        padding-left: 80px; }
+        footer > div > div > ul:nth-of-type(2) li {
+          width: 145px;
+          text-align: center;
+          margin-top: 15px; }
+          footer > div > div > ul:nth-of-type(2) li:nth-of-type(1) {
+            font-size: 20px;
+            font-weight: 600;
+            color: #FF8A00;
+            margin-top: 10px; }
+          footer > div > div > ul:nth-of-type(2) li:nth-of-type(2), footer > div > div > ul:nth-of-type(2) li:nth-of-type(3) {
+            font-size: 16px;
+            color: #fff; }
+
+.copyright {
+  width: 100%;
+  height: 47px;
+  background: #333333;
+  color: #fff;
+  line-height: 47px;
+  text-align: center; }
+  .copyright p {
+    float: left;
+    width: 100%;
+    position: relative; }
+    .copyright p span {
+      display: inline-block;
+      position: absolute;
+      top: 14px;
+      width: 21px;
+      height: 21px;
+      background: url("../img/baidu.png") no-repeat; }
+
+/*# sourceMappingURL=xinwenerji.css.map */

@@ -1,0 +1,302 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body,body>div{
+  width: 100%;
+  font-family: "微软雅黑";
+}
+li{  list-style: none;  }
+a{  text-decoration: none;  }
+body>div {
+  //清浮动
+  @mixin clearfix {
+    zoom: 1;
+    &:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+  }
+  //头部
+  header {
+    width: 1000px;
+    margin: 3% auto;
+    @include clearfix;
+    div {
+      float: left;
+    }
+    //导航
+    ul {
+      float: left;
+      width: 600px;
+      margin-left: 10%;
+      li {
+        float: left;
+        line-height: 70px;
+        a {
+          text-align: center;
+          display: inline-block;
+          padding: 0 10px;
+          height: 100%;
+          width: 100%;
+          font-size: 16px;
+          color: #333333;
+
+        }
+      }
+    }
+    p{
+      float: right;
+      margin: -100px 60px 0 0;
+      a:nth-of-type(2){
+        color: #551A8B;
+      }
+    }
+  }
+  .on {
+    color: #FF8A00;
+  }
+  .content {
+    .banner {
+      width: 100%;
+      margin-top: -3%;
+      overflow: hidden;
+      ul{
+        width: 400%;
+        li{
+          float: left;
+          width: 25%;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .top{
+      text-align: center;
+      width: 93px;
+      height: 62px;
+      background: #E60012;
+      border-radius: 5px;
+      padding-top: 3px;
+      position: fixed;
+      top: 50%;
+      right: 60px;
+      a{
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+    .recruit{
+      width: 74%;
+      margin: 38px auto;
+      &>p{
+        width: 100%;
+        border-bottom: 1px solid #A70A0B;
+        color: #FF8A00;
+        font-size: 28px;
+        padding-bottom: 20px;
+      }
+      ul{
+        margin-top: 20px;
+        li{
+          line-height: 40px;
+          input[type=text],select{
+            width: 303px;
+            height: 30px;
+            border: 1px solid #CBCBCB;
+          }
+          select{
+            font-size: 14px;
+          }
+          span{
+            color: #FF8A00;display: inline-block;
+          }
+
+          label{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 0 5px 0 25px ;
+            border: 1px solid #C0C0C0;
+            background: linear-gradient(#DEDEDE 30%,#EDEDED 30%,#fff );
+          }
+          input[type=radio]{
+            display: none;
+            margin-left: 20px;
+          }
+          input:checked+label{
+            background: #FF8A00;
+          }
+          button{
+            width: 206px;
+            height: 46px;
+            background: #383838;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            float: right;
+          }
+          &:nth-of-type(6){
+            margin-top: 20px;
+            span{
+              margin-right: 80px;
+              margin-left: 70px;
+            }
+          }
+        }
+      }
+    }
+    .application {
+      width: 100%;
+      margin-top: 85px;
+      background: #F8F8F8;
+      height: 510px;
+      &>div{
+        width: 74%;
+        margin: 38px auto;
+        & > p {
+          width: 1000px;
+          border-bottom: 1px solid #A70A0B;
+          color: #FF8A00;
+          font-size: 28px;
+          padding-bottom: 20px;
+          padding-top: 40px;
+        }
+        &>ul{
+          width: 1000px;
+          margin-top: 25px;
+          li{
+            width: 17%;
+            float: left;
+            margin-left: 10%;
+            &:nth-of-type(1){margin: 0;}
+            span{
+              display: inline-block;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+    .cooperation{
+      width: 74%;
+      margin: 38px auto;
+      height: 650px;
+      p{
+        width: 1000px;
+        border-bottom: 1px solid #A70A0B;
+        color: #FF8A00;
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+      }
+      ul{
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 15px;
+        li{
+          float: left;
+          width: 20%;
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  footer{
+    height: 165px;
+    width: 100%;
+    background: #5B5B5B;
+    padding-top: 20px;
+    &>div{
+      width: 1050px;
+      margin: 0 auto;
+      height: 80%;
+      &>ul{
+        //&:behavior: url("../../../IE8兼容css3的属性/PIE.htc");
+        border-right: 1px solid #868686;
+        float: left;
+        height: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+        li{
+          margin-top: 10px;
+          width: 80px;
+          text-align: center;
+          a{
+            color: #fff;
+          }
+          a:hover{
+            color: #FF8A00;
+          }
+          &:nth-of-type(1){
+            font-weight: 600;
+            margin: 10px 0 15px 0;
+          }
+        }
+      }
+
+      &>div{
+        width: 445px;
+        float: right;
+        &>ul:nth-of-type(1){
+          float: left;
+          color: #fff;
+          padding-left: 80px;
+          li{
+            span{
+              display: inline-block;
+              width: 26px;
+              height: 22px;
+              background: url("../img/xin.png") no-repeat;
+              background-size: 100% 100%;
+              margin-top: 5px;
+            }
+            &:nth-of-type(1){
+              font-weight: 600;
+              margin: 0 0 5px 28px;
+            } &:nth-of-type(2){
+                margin: 0 0 0 20px;
+              }
+          }
+        }
+        &>ul:nth-of-type(2){
+          float: left;padding-left: 80px;
+          li{
+            width: 145px;
+            text-align: center;
+            margin-top: 15px;
+            &:nth-of-type(1){
+              font-size: 20px;font-weight: 600;
+              color: #FF8A00;margin-top: 10px;
+            }
+            &:nth-of-type(2),&:nth-of-type(3){
+              font-size: 16px;color: #fff;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    height: 47px;
+    background: #333333;
+    color: #fff;
+    width: 100%;
+    line-height: 47px;
+    text-align: center;
+    span{
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      background: url("../img/baidu.png") no-repeat;
+    }
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+		<script src="dist/js/jquery.js"></script>
+		<script src="dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/shop-l-d.css" />
+	</head>
+	<body>
+		<header>
+			<div>
+				<img src="img/logo.jpg" alt="">
+			</div>
+			<ul>
+				<li>
+					<a href="../heip/help.html">关于人人店</a>
+				</li>
+				<li>
+					<a href="../cmd/website.html">商城系统</a>
+				</li>
+				<li>
+					<a href="#">开放平台</a>
+				</li>
+				<li>
+					<a href="../cmd/sell.html">人人分销</a>
+				</li>
+				<li>
+					<div class="dropdown">
+					<span id="dropdownMenu1" data-toggle="dropdown">
+							用户管理
+							<span class="caret"></span>
+						</span>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<p role="presentation" class="dropdown-header"><a href="#">官网商城管理</a></p>
+							<p role="presentation" class="dropdown-header"><a href="#">媒体管理</a></p>
+							<p role="presentation" class="dropdown-header"><a href="#">第三方商城销售管理</a></p>
+							
+						</ul>
+				</div>
+				</li>
+				
+			</ul>
+		</header>
+		<div class="content">
+			<!--banner-->
+			<div id="banner">
+				<ul id="pics">
+					<li><img src="img/banner.png" alt="" /></li>
+					<li><img src="img/banner.png" alt="" /></li>
+					<li><img src="img/banner.png" alt="" /></li>
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+			<!--产品简介-->
+			<div class="box">
+				<p class="p1">
+					产品简介<br />
+					<label>PRODUCT INTRODUCTION</label>
+				</p>
+
+				<ul>
+					<li>
+						<p>海云微分销是一个分销商城管理平台，使用海云微分销系统，人人都可以搭建属于 自己的个性化商城，含PC版，移动版和微信版
+							<br /> 加入后，可一键创建商城，无需学习，无需成本，无需维护，无需进货发货 你只需通过自己的网站，APP，自媒体，QQ空间，朋友圈传播，就可以获得佣金 收益（按商品点击计费）
+						</p>
+					</li>
+					<li>
+						<img src="img/1.png" alt="" />
+					</li>
+
+				</ul>
+			</div>
+			<div style="clear: both;"></div>
+			<!--产品优势-->
+			<div class="box1">
+				<p class="p1">
+					产品优势<br />
+					<label>PRODUCT ADVANTAGE</label>
+				</p>
+
+				<ul id="ul1">
+
+					<li>
+						<img src="img/2.png" alt="" />
+					</li>
+					<li>
+						<p>
+							<label>一键创建属于自己的个性化商城</label><br />
+							 这年头，开个淘宝店也不容易，你需要会装修店铺，需要进货发货，需要24小时客服，需 要为流量发愁，需要处理退货投诉
+							<br /> 加入海云微分销，只需三步，即可拥有一个自己个性化的商城，动动手转发转发，即可获取 佣金收益
+						</p>
+					</li>
+				</ul>
+				<p class="p1">
+					产品简介<br />
+					<label>PRODUCT INTRODUCTION</label>
+				</p>
+
+				<ul id="ul2">
+					<li>
+						<p>
+							<label>朋友就是拿来“卖”的 </label><br />
+							通过自媒体工具，传播你自己的商城，通过商品点击，获取收益；粉丝，如今也 可以变钱。<br />
+							朋友就是拿来“卖”的，让朋友圈成为你的盈利工具。
+						</p>
+					</li>
+					<li>
+						<img src="img/3.png" alt="" />
+					</li>
+
+				</ul>
+			</div>
+		
+			<div id="btn">
+				<a href="#">创建我的商城</a
+			</div>
+		
+		</div>
+
+		<div class="flooter">
+			<ul>
+				<li>
+					<a href="../app/Sign.html">shopcmd</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="../cmd/website.html">官网云商城</a>
+				</li>
+				<li>
+					<a href="#">智慧门店</a>
+				</li>
+				<li>
+					<a href="../cmd/sell.html">营销平台</a>
+				</li>
+				<li>
+					<a href="#">媒体联盟</a>
+				</li>
+				<li>
+					<a href="../heip/help.html">关于我们</a>
+				</li>
+				<li>
+					<img src="img/te.jpg" />
+					<span>4008-188-360</span>
+				</li>
+			</ul>
+			<p>©Copyright 2015 苏州海云网络科技有限公司版权所有 | 苏ICP备15038170号-3 </p>
+		</div>
+
+
+		<!--返回顶部-->
+		<div class="gundongtiao">
+			<a href="#">
+				<img src="img/gundongtiao.png">
+				<p>联系咨询</p>
+			</a>
+		</div>
+	</body>
+
+</html>
+<script>
+	$("#btn>button").hover(function(){
+		$(this).css({"background":"orange","color":"white"})
+	},function(){
+		$(this).css({"background":"white","color":"orange"})
+	})
+	//返回顶部js效果
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.gundongtiao').fadeIn();
+        } else {
+            $('.gundongtiao').fadeOut();
+        }
+    });
+    $('.gundongtiao').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop : 0},1000);
+        return false;
+    });
+	
+</script>

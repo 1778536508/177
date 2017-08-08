@@ -1,0 +1,28 @@
+{
+	"banner":["oo_06.png","banner.jpg","banner2.jpg","banner5.jpg","oo_06.png"],
+	"note":{
+			"remove":"shanchu.png",
+			"text":"请编辑短信 GQTA 发送 1069035216068 下载集群通产品"
+			},
+	"download":[{
+				"class":"android",
+				"Animg":"an.png",
+				"title":"Android下载",
+				"noimg":"j.png",
+				"notext":"短信下载",
+				"brainimg":"jj.png",
+				"braintext":"电脑下载",
+				"yardimg":"r1.png",
+				"yardtext":"二维码下载"
+				},{
+				"class":"ios",
+				"Animg":"i.png",
+				"title":"ios下载",
+				"noimg":"jj.png",
+				"notext":"短信下载",
+				"brainimg":"jj.png",
+				"braintext":"电脑下载",
+				"yardimg":"r2.png",
+				"yardtext":"二维码下载"
+				}]		
+}

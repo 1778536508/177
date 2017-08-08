@@ -1,0 +1,163 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body, body > div {
+  width: 100%;
+  font-family: "微软雅黑"; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body > div header {
+  width: 1000px;
+  margin: 3% auto;
+  zoom: 1; }
+  body > div header:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  body > div header div {
+    float: left; }
+  body > div header ul {
+    float: left;
+    width: 600px;
+    margin-left: 10%; }
+    body > div header ul li {
+      float: left;
+      line-height: 70px; }
+      body > div header ul li a {
+        text-align: center;
+        display: inline-block;
+        padding: 0 10px;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        color: #333333; }
+  body > div header p {
+    float: right;
+    margin: -100px 60px 0 0; }
+    body > div header p a:nth-of-type(2) {
+      color: #551A8B; }
+body > div .content {
+  width: 76%;
+  margin: 0 auto; }
+  body > div .content .map {
+    height: 59px;
+    background: #a38c71;
+    margin: 0 auto;
+    margin-top: 36px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    line-height: 59px; }
+  body > div .content .text {
+    width: 100%; }
+    body > div .content .text p {
+      width: 100%;
+      margin-top: 40px; }
+      body > div .content .text p span {
+        display: inline-block;
+        margin-top: 10px; }
+body > div footer {
+  height: 165px;
+  width: 100%;
+  background: #5B5B5B;
+  padding-top: 20px;
+  margin-top: 40px; }
+  body > div footer > div {
+    width: 1050px;
+    margin: 0 auto;
+    height: 80%; }
+    body > div footer > div > ul {
+      border-right: 1px solid #868686;
+      float: left;
+      height: 100%;
+      padding-left: 60px;
+      padding-right: 60px; }
+      body > div footer > div > ul li {
+        margin-top: 10px;
+        width: 80px;
+        text-align: center; }
+        body > div footer > div > ul li a {
+          color: #fff; }
+        body > div footer > div > ul li a:hover {
+          color: #FF8A00; }
+        body > div footer > div > ul li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 10px 0 15px 0; }
+    body > div footer > div > div {
+      width: 445px;
+      float: right; }
+      body > div footer > div > div > ul:nth-of-type(1) {
+        float: left;
+        color: #fff;
+        padding-left: 80px; }
+        body > div footer > div > div > ul:nth-of-type(1) li span {
+          display: inline-block;
+          width: 26px;
+          height: 22px;
+          background: url("../img/xin.png") no-repeat;
+          background-size: 100% 100%;
+          margin-top: 5px; }
+        body > div footer > div > div > ul:nth-of-type(1) li:nth-of-type(1) {
+          font-weight: 600;
+          margin: 0 0 5px 28px; }
+        body > div footer > div > div > ul:nth-of-type(1) li:nth-of-type(2) {
+          margin: 0 0 0 20px; }
+      body > div footer > div > div > ul:nth-of-type(2) {
+        float: left;
+        padding-left: 80px; }
+        body > div footer > div > div > ul:nth-of-type(2) li {
+          width: 145px;
+          text-align: center;
+          margin-top: 15px; }
+          body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(1) {
+            font-size: 20px;
+            font-weight: 600;
+            color: #FF8A00;
+            margin-top: 10px; }
+          body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(2), body > div footer > div > div > ul:nth-of-type(2) li:nth-of-type(3) {
+            font-size: 16px;
+            color: #fff; }
+body > div .copyright {
+  height: 47px;
+  background: #333333;
+  color: #fff;
+  width: 100%;
+  line-height: 47px;
+  text-align: center; }
+  body > div .copyright span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../img/baidu.png") no-repeat; }
+body > div .on {
+  color: #FF8A00; }
+
+.fixed {
+  position: fixed;
+  right: 70px;
+  top: 50%;
+  width: 93px;
+  height: 62px;
+  background: #e60012;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 9; }
+  .fixed a {
+    width: 100%;
+    height: 100%; }
+    .fixed a img {
+      width: 28px;
+      height: 16px;
+      margin-top: 10px; }
+    .fixed a p {
+      font-size: 17px;
+      color: white; }
+
+/*# sourceMappingURL=css.css.map */
