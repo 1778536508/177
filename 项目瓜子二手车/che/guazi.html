@@ -1,0 +1,95 @@
+
+<div ng-controller="myCtrl2">
+<link rel="stylesheet" href="che/css/guazi.css"/>
+<link rel="stylesheet" href="che/css/reset.css"/>
+    <div class="header">
+        <span>我要卖车</span>
+        <span></span>
+    </div>
+    <div class="content">
+        <div class="banner">
+            <img src="che/images/banner_02.png"/>
+            <form>
+                <span>10287840</span><span>位车主提交了卖车申请</span>
+                <input type="text" placeholder="请输入手机号"/>
+                <button type="button"><a href="">预约卖车</a></button>
+                <p>
+                    <span><a href="">免费咨询</a></span>
+                    <span><a href="">爱车估价</a></span>
+                </p>
+                <p>
+                    <span></span>
+                    <span>查看卖车进度</span>
+                    <span></span>
+                </p>
+            </form>
+            <div class="zhihuan">
+                <div>
+                <span>
+                   <a href="#/perm">置换新车</a>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="con_list">
+            <p>{{jilu.title}}</p>
+            <dl ng-repeat="it in jilu.list">
+                <dt><img src="che/images/{{it.img}}"></dt>
+                <dd>
+                    <p>{{it.name}}</p>
+                    <p>{{it.long}}  <span>{{it.add}}</span></p>
+                    <p>
+                        <span>成交价</span><span>{{it.price}}</span>
+                        <span>比车商高</span><span>{{it.height}}</span>
+                    </p>
+                </dd>
+            </dl>
+            <button><a href="">全部车源成交记录</a></button>
+        </div>
+        <div class="liucheng">
+            <div>
+                <p>{{liucheng.title}}</p>
+                <ul>
+                    <li><img src="che/images/font1_03.png" alt=""/><br/>提交信息</li>
+                    <span></span>
+                    <li><img src="che/images/font2_03.png" alt=""/><br/>上门服务</li>
+                    <span></span>
+                    <li><img src="che/images/font3_03.png" alt=""/><br/>买家看车</li>
+                    <span></span>
+                    <li><img src="che/images/font4_03.png" alt=""/><br/>交易过户</li>
+                </ul>
+            </div>
+        </div>
+        <div class="youdian">
+            <div  ng-repeat="it in liucheng.list">
+                <p>{{it.big}}   <span>{{it.green}}</span></p>
+                <span>{{it.small}}</span>
+                <img src="che/images/{{it.img}}">
+            </div>
+        </div>
+        <div class="zhinan">
+            <div>
+                <p>{{zhinan.title}}</p>
+                <dl ng-repeat="it in zhinan.list">
+                    <dt><span>{{it.name}}</span><span>{{it.Q}}</span><span class="fa fa-angle-down" id="cl"></span></dt>
+                    <dd>{{it.content}}</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="yuyue">
+            <input type="text" placeholder="请输入手机号"/>
+            <button><a href="">预约卖车</a></button>
+        </div>
+    </div>
+    <div class="blank">
+
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#/shouye"><img src="che/images/foot1_03.png" class="im1"/><br/>首页</a></li>
+            <li><a href="#/vehicle"><img src="che/images/f2.png"  class="im2"/><br/>买车</a></li>
+            <li style="color: #10AE29;"><a href="#/sell"><img src="che/images/foot_03.png" class="im3"/><br/>卖车</a></li>
+            <li><a href="#/wd"><img src="che/images/f4.png"  class="im4"/><br/>我的</a></li>
+        </ul>
+    </div>
+</div>

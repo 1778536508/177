@@ -1,0 +1,26 @@
+.origin {
+  color: #ff8a00; }
+
+.fc-help-banner {
+  width: 100%; }
+  .fc-help-banner img {
+    width: 100%; }
+
+.fc-help-content {
+  width: 1000px;
+  margin: 35px auto 0; }
+  .fc-help-content h2 {
+    font-size: 30px;
+    color: #FF8A00;
+    font-weight: normal; }
+  .fc-help-content > ul {
+    margin-top: 21px;
+    border-top: 1px solid #A70A0B;
+    list-style: none;
+    padding-bottom: 56px; }
+    .fc-help-content > ul li {
+      font-size: 16px;
+      margin-top: 42px;
+      line-height: 30px; }
+
+/*# sourceMappingURL=help.css.map */

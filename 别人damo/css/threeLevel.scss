@@ -1,0 +1,32 @@
+.t-capacity{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #FFF;
+    text-align: center;
+    background: #a38c71;
+    margin: 38px 0;
+    font-size: 30px;
+}
+.t-box{
+    width: 1000px;
+    margin: 0 auto;
+    ul{
+        text-align: left;
+        color: #000;
+        li{
+            margin-bottom: 40px;
+            div{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.t-content{
+    text-align: center;
+    font-size: 14px;
+    color: #ffbb87;
+    &>div{
+        margin: 10px 0;
+    }
+}

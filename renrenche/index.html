@@ -1,0 +1,143 @@
+
+<!--
+	author:NieDongye
+	date:2017-5-12
+	email:1778536508@qq.com
+-->
+
+<!DOCTYPE html>
+<html ng-app="Myname" ng-controller="name">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <script type="text/javascript">
+        	(function(doc){
+				function changeSize(){
+					var size=doc.documentElement.clientWidth/320*10;
+					doc.querySelector('html').style.fontSize=size+'px';
+				}
+				//用户缩放浏览器窗口大小时
+				window.onresize=changeSize;
+				changeSize();
+			})(document);
+        </script>
+        <script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+        <script src="app.js" type="text/javascript" charset="utf-8"></script>
+        
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<a href="#"><span class="fa fa-fw fa-map-marker"></span><span>北京</span></a>
+				<a href="#">
+					<img src="img/logo.png"/>
+					<span class="fa fa-fw fa-chevron-down"></span>
+				</a>
+				<a href="#" class="fa fa-fw fa-search"></a>
+				<a href="#" class="fa fa-fw fa-user"></a>
+			</header>
+			<div class="sort">
+				<ul>
+					<li>
+						<a href="#">
+							<span>品牌</span>
+							<span class="fa fa-fw fa-chevron-down"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>价格</span>
+							<span class="fa fa-fw fa-chevron-down"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>更多</span>
+							<span class="fa fa-fw fa-chevron-down"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>排序</span>
+							<span class="fa fa-fw fa-chevron-down"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-fw fa-list"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="content_sort">
+					<ul>
+						<li ng-repeat="x in data"><img ng-src="img/images/{{x.img}}"><a href="#">{{x.title}}</a></li>
+					</ul>
+				</div>
+				<div class="content_n">
+					<div class="bike" ng-repeat="(x,y) in cont">
+						<div class="banner">
+							<img ng-src="img/{{x}}"/>
+						</div>
+						<ul>
+							<li ng-repeat="key in y">
+								<a href="#">
+									<img ng-src="img/{{key.img}}"/>
+									<div>
+										<p>{{key.text1}}</p>
+										<p>{{key.text2}}</p>
+										<p>{{key.text3}}</p>
+										<p>
+											<span>{{key.text4}}</span>
+											<span>{{key.text5}}</span>
+											<span>{{key.text6}}</span>
+											<span>{{key.text7}}</span>
+											<span class="{{key.class}}"></span>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="foolter">
+					<p>北京二手车</p>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/images/tu_11.png"/>
+								<span>APP下载</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/images/tu_13.png"/>
+								<span>服务保障</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/images/tu_15.png"/>
+								<span>卖车</span>
+							</a>
+						</li>
+					</ul>
+					<p class="refer">咨询电话：<span>400-038-6032</span> 举报事故车：<span>4008-610-500转6</span></p>
+					<p class="card">Copyright ©&copy; 2016 Renrenche.com 京ICP证160608号</p>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</body>
+</html>

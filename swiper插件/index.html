@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<style type="text/css">
+		html{
+			width: 100%;
+		}
+	    body {
+	        background: #eee;
+	        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	        font-size: 14px;
+	        color:#000;
+	        margin: 0;
+	        padding: 0;
+	        width: 100%;
+	        height: 100%;
+	        overflow: hidden;
+	    }
+	    .swiper-container {
+	        width: 100%;
+	        height: 100%;
+	        margin: 20px auto;
+	    }
+	    .swiper-slide {
+	        text-align: center;
+	        font-size: 18px;
+	        background: #fff;
+	        
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	        height: 100%;
+	    }
+	    img{
+	        width: 100%;
+	        height: 100%;
+	    }
+	    .swiper-pagination{
+	    	/*margin-bottom: 50px;*/
+	    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css"/>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="img/1.jpg"/></div>
+	        <div class="swiper-slide"><img src="img/2.jpg"/></div>
+	        <div class="swiper-slide"><img src="img/3.jpg"/></div>
+	        <div class="swiper-slide"><img src="img/4.jpg"/></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+    	<div class="swiper-pagination"></div>
+    	<!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+	</div>
+    <script src="dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+//  	var mySwiper = new Swiper ('.swiper-container', {
+////		    direction: 'vertical',
+//		    loop: true,
+//		    pagination: '.swiper-pagination'
+//		  })
+    	
+    	var mySwiper = new Swiper('.swiper-container',{
+    		//设置轮播的方向为上下轮播默认为true左右轮播
+//  		direction: 'vertical',
+
+
+			
+    		//3D效果
+    		//立体效果
+			effect : 'cube',
+			
+			//淡入淡出效果
+//			effect : 'fade',
+			
+			//3D折页效果
+//			effect : 'coverflow',
+//			slidesPerView: 2,
+//			centeredSlides: true,
+			
+			//翻页效果
+//			effect : 'flip',
+
+			//默认是左右的普通效果
+//			cube: {
+//			  slideShadows: true,
+//			  shadow: true,
+//			  shadowOffset: 100,
+//			  shadowScale: 0.6
+//			},
+			
+			
+			
+			//循环轮播
+			loop: true,
+			
+			
+			
+			// 如果需要前进后退按钮
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    
+		    
+			
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+			
+			
+			//持续时间
+			speed:2000,
+			
+			//循环播放
+			autoplay: 1000,
+			
+			//触摸后轮播不停止(为false时,默认停止位true)
+			autoplayDisableOnInteraction : false
+			
+		})
+    	
+    </script>
+</body>
+</html>
+
+<script language="javascript"> 
+var mySwiper = new Swiper('#swiper-container1',{
+effect : 'fade',
+})
+var mySwiper2 = new Swiper('#swiper-container2',{
+effect : 'cube',
+})
+var mySwiper3 = new Swiper('#swiper-container3',{
+effect : 'coverflow',
+slidesPerView: 3,
+centeredSlides: true,
+})
+var mySwiper4 = new Swiper('#swiper-container4',{
+effect : 'flip',
+})

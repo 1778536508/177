@@ -1,0 +1,280 @@
+{
+	"rotate": [
+		"a_10.png",
+		"a_10.png",
+		"a_10.png",
+		"a_10.png",
+		"a_10.png"
+	],
+	"icon": [
+		{
+			"map": "a_13.png",
+			"text": "商品"
+		}, {
+			"map": "a_15.png",
+			"text": "生活"
+		}, {
+			"map": "a_17.png",
+			"text": "品牌"
+		}, {
+			"map": "a_19.png",
+			"text": "聚宝盆"
+		}, {
+			"map": "a_25.png",
+			"text": "聚名牌"
+		}, {
+			"map": "a_26.png",
+			"text": "聚家装"
+		}, {
+			"map": "a_28.png",
+			"text": "剧透"
+		}, {
+			"map": "a_29.png",
+			"text": "客户端"
+		}
+	],
+	"goods": [
+		{
+			"nuMber": "number_1",
+			"figure": "1",
+			"chart": "a_36.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_2",
+			"figure": "2",
+			"chart": "a_39.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_3",
+			"figure": "3",
+			"chart": "a_41.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_4",
+			"figure": "4",
+			"chart": "a_43.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_5",
+			"figure": "5",
+			"chart": "a_45.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_6",
+			"figure": "6",
+			"chart": "a_47.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_7",
+			"figure": "7",
+			"chart": "a_49.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_8",
+			"figure": "8",
+			"chart": "a_51.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_9",
+			"figure": "9",
+			"chart": "a_53.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}, {
+			"nuMber": "number_10",
+			"figure": "10",
+			"chart": "a_59.png",
+			"sell": "已售68423",
+			"num": "2.3",
+			"lose": "折",
+			"cost": "￥299",
+			"cash": "￥51",
+			"reTurn": "a_55.png"
+		}
+	],
+	"sort": [
+		{
+			"title": "聚划算  逛起来!",
+			"sortbox": {
+				"hue": "sort_col1",
+				"text": "商品团",
+				"img": "im_03.png"
+			},
+			"sortLi": [
+				{
+					"class": "true",
+					"Text": "服饰"
+				}, {
+					"class": "false",
+					"Text": "配饰"
+				}, {
+					"class": "false",
+					"Text": "美妆"
+				}, {
+					"class": "false",
+					"Text": "鞋包"
+				}, {
+					"class": "false",
+					"Text": "食品"
+				}, {
+					"class": "true",
+					"Text": "家居"
+				}, {
+					"class": "false",
+					"Text": "运动"
+				}, {
+					"class": "true",
+					"Text": "电器"
+				}, {
+					"class": "false",
+					"Text": "百货"
+				}, {
+					"class": "false",
+					"Text": "母婴"
+				}, {
+					"class": "false",
+					"Text": "数码"
+				}, {
+					"class": "false",
+					"Text": "更多"
+				}
+			]
+		}, {
+			"title": "精彩商品  逛起来!",
+			"sortbox": {
+				"hue": "sort_col3",
+				"text": "生活团",
+				"img": "a_65.png"
+			},
+			"sortLi": [
+				{
+					"class": "true",
+					"Text": "服饰"
+				}, {
+					"class": "false",
+					"Text": "配饰"
+				}, {
+					"class": "false",
+					"Text": "美妆"
+				}, {
+					"class": "false",
+					"Text": "鞋包"
+				}, {
+					"class": "false",
+					"Text": "食品"
+				}, {
+					"class": "true",
+					"Text": "家居"
+				}, {
+					"class": "false",
+					"Text": "运动"
+				}, {
+					"class": "true",
+					"Text": "电器"
+				}, {
+					"class": "false",
+					"Text": "百货"
+				}, {
+					"class": "false",
+					"Text": "母婴"
+				}, {
+					"class": "false",
+					"Text": "数码"
+				}, {
+					"class": "false",
+					"Text": "更多"
+				}
+			]
+		}, {
+			"title": "品质生活  逛起来!",
+			"sortbox": {
+				"hue": "sort_col4",
+				"text": "品牌团",
+				"img": "a_68.png"
+			},
+			"sortLi": [
+				{
+					"class": "true",
+					"Text": "服饰"
+				}, {
+					"class": "false",
+					"Text": "配饰"
+				}, {
+					"class": "false",
+					"Text": "美妆"
+				}, {
+					"class": "false",
+					"Text": "鞋包"
+				}, {
+					"class": "false",
+					"Text": "食品"
+				}, {
+					"class": "true",
+					"Text": "家居"
+				}, {
+					"class": "false",
+					"Text": "运动"
+				}, {
+					"class": "true",
+					"Text": "电器"
+				}, {
+					"class": "false",
+					"Text": "百货"
+				}, {
+					"class": "false",
+					"Text": "母婴"
+				}, {
+					"class": "false",
+					"Text": "数码"
+				}, {
+					"class": "false",
+					"Text": "更多"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="swiper/css/swiper.min.css"/>
+        <script src="swiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="head">
+				<header>
+					<label>某某商城</label>
+				</header>
+				<div class="list">
+					<ul>
+						<li><a href="jsvascript:;">全部</a></li>
+						<li><a href="jsvascript:;">男装</a></li>
+						<li><a href="jsvascript:;">女装</a></li>
+						<li><a href="jsvascript:;">鞋包</a></li>
+						<li><a href="jsvascript:;">内衣</a></li>
+						<li><a href="jsvascript:;">食品</a></li>
+						<li><a href="jsvascript:;"><img src="img/e.png"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div class="banner">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>	
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+				    	<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="text">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img1.jpg"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img2.png"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img3.png"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img4.png"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img5.png"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<img src="img/img6.png"/>
+								<p>卓越的美白效果，打造透明明亮 白肌肤</p>
+								<p>￥169</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				
+				
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	
+	//轮播图
+	    	var mySwiper = new Swiper('.swiper-container',{
+	    		//设置轮播的方向为上下轮播默认为true左右轮播
+//	  		direction: 'vertical',
+	
+	
+				
+	    		//3D效果
+	    		//立体效果
+//				effect : 'cube',
+				
+				//淡入淡出效果
+//				effect : 'fade',
+				
+				//3D折页效果
+//				effect : 'coverflow',
+//				slidesPerView: 2,
+//				centeredSlides: true,
+				
+				//翻页效果
+	//			effect : 'flip',
+	
+				//默认是左右的普通效果
+				cube: {
+				  slideShadows: true,
+				  shadow: true,
+				  shadowOffset: 100,
+				  shadowScale: 0.6
+				},
+				
+				
+				
+				//循环轮播
+				loop: true,
+				
+				
+				
+				// 如果需要前进后退按钮
+			    nextButton: '.swiper-button-next',
+			    prevButton: '.swiper-button-prev',
+			    
+			    
+				
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+				
+				
+				//持续时间
+				speed:2000,
+				
+				//循环播放
+				autoplay: 1000,
+				
+				//触摸后轮播不停止(为false时,默认停止位true)
+				autoplayDisableOnInteraction : false
+				
+			})
+	
+	
+</script>

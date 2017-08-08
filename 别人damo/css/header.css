@@ -1,0 +1,115 @@
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 16px; }
+  .header div > p {
+    float: right;
+    font-size: 16px; }
+    .header div > p a {
+      color: #404040;
+      text-decoration: none; }
+      .header div > p a:hover {
+        text-decoration: none; }
+    .header div > p .on {
+      color: #ff8a00; }
+  .header img {
+    float: left;
+    width: 225px;
+    height: 45px;
+    margin-top: 20px; }
+  .header ul {
+    float: right;
+    margin-top: 40px; }
+    .header ul li {
+      float: left;
+      margin-left: 40px; }
+      .header ul li a {
+        text-decoration: none;
+        color: #2d2c2c; }
+        .header ul li a:hover {
+          text-decoration: none;
+          color: #ff8a00; }
+   .origin {
+        color: #ff8a00 !important; }
+
+.header-hr {
+  clear: both;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #fff 0%, #e60416 50%, #fff 100%);
+  margin-top: 20px;
+  margin-bottom: 1px; }
+
+.h-di1 {
+  width: 100%;
+  background: #5b5b5b;
+  height: 188px; }
+  .h-di1 .footer {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px; }
+    .h-di1 .footer ul {
+      float: left;
+      color: white;
+      margin-top: 40px; }
+      .h-di1 .footer ul li > a {
+        color: white; }
+        .h-di1 .footer ul li > a:hover {
+          color: #ff8a00;
+          text-decoration: none; }
+    .h-di1 .footer .h-ul1 {
+      width: 160px;
+      text-align: center;
+      border-right: 1px solid white; }
+      .h-di1 .footer .h-ul1 li {
+        margin-bottom: 20px; }
+    .h-di1 .footer .h-ul2 {
+      width: 208px;
+      text-align: center;
+      border-right: 1px solid white; }
+      .h-di1 .footer .h-ul2 li {
+        margin-bottom: 20px; }
+    .h-di1 .footer .h-ul3 {
+      width: 178px;
+      text-align: center;
+      border-right: 1px solid white; }
+      .h-di1 .footer .h-ul3 li {
+        margin-bottom: 20px; }
+    .h-di1 .footer .h-ul4 {
+      width: 260px;
+      text-align: center; }
+    .h-di1 .footer .h-ul5 {
+      text-align: center; }
+
+.s28 {
+  font-size: 28px; }
+
+.h-di2 {
+  width: 100%;
+  background: #333333;
+  text-align: center;
+  padding: 15px; }
+  .h-di2 p {
+    color: white; }
+
+#j-toTop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 94px;
+  height: 62px;
+  text-align: center;
+  background: #e60012;
+  font-size: 18px;
+  color: white;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(../js/PIE.htc); }
+  #j-toTop:hover {
+    background: #ff8a00; }
+
+/*# sourceMappingURL=header.css.map */

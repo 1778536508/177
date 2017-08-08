@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.box {
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; }
+  .box input {
+    width: 50px;
+    height: 30px; }
+
+ul {
+  list-style: none;
+  zoom: 1;
+  width: 2000px; }
+  ul:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  ul li {
+    float: left;
+    width: 500px;
+    height: 200px;
+    background: red;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    color: white; }
+
+/*# sourceMappingURL=scss.css.map */

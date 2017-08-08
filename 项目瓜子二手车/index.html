@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="che/swiper/css/swiper.css">
+    <link rel="stylesheet" href="che/css/font-awesome.min.css">
+</head>
+<body>
+<ng-view>
+
+</ng-view>
+</body>
+</html>
+
+<script src="angular.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="che/js/zepto.min.js"></script>
+<script src="che/swiper/js/swiper.js"></script>
+<script src="luyou.js"></script>
+<!--<script src="che/js/jquery-3.1.1.min.js"></script>-->
+
+<script src="che/js/app.js"></script>
+<script src="che/js/vehicle.js"></script>
+<script src="che/js/server.js"></script>
+<script src="che/js/wd.js"></script>
+<script src="che/js/guazi.js"></script>
+<script src="che/js/jinrong.js"></script>
+<script src="che/js/text.js"></script>
+<script src="che/js/text2.js"></script>
+<script src="che/js/perm.js"></script>
+<script src="che/js/kj.js"></script>
+<script src="che/js/jj.js"></script>
+<script src="che/js/sc.js"></script>
+<script src="che/js/screen.js"></script> 
+<!--<script src="che/js/dy.js"></script>-->
+<!--<script src="che/js/ll.js"></script>-->
+<!--<script src="che/js/mai.js"></script>-->
+<!--<script src="che/js/yh.js"></script>-->
+<!--<script src="che/js/yj.js"></script>-->
+
+
+<script type="text/javascript">
+    (function(doc){
+        function changeSize(){
+            var size=doc.documentElement.clientWidth/320*10;
+            doc.querySelector('html').style.fontSize=size+'px';
+        }
+        //用户缩放浏览器窗口大小时
+        window.onresize=changeSize;
+        changeSize();
+    })(document);
+</script>

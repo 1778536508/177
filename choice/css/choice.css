@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%; }
+
+html, body, .box {
+  display: flex;
+  -webkit-flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 3.5rem;
+  background: white;
+  position: relative;
+  text-align: center;
+  line-height: 3.5rem; }
+  header .left {
+    display: block;
+    width: 1rem;
+    height: 1.5rem;
+    background: url(../img/pro_06.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 2rem;
+    top: 1rem; }
+  header label {
+    font-size: 1.5rem;
+    font-weight: 550; }
+
+.date {
+  width: 100%;
+  height: 5rem;
+  overflow: hidden; }
+  .date ul {
+    width: 200%;
+    height: 100%;
+    background: #2D3C4B;
+    display: flex; }
+    .date ul li {
+      -webkit-flex-grow: 1;
+      height: 100%;
+      text-align: center;
+      padding-top: 1rem;
+      line-height: 1.5rem; }
+      .date ul li p {
+        color: white; }
+
+.shop {
+  width: 100%;
+  height: 6rem; }
+  .shop ul {
+    width: 100%;
+    height: 100%;
+    zoom: 1; }
+    .shop ul:after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .shop ul li {
+      float: left; }
+      .shop ul li:nth-child(1) {
+        width: 6rem;
+        height: 100%;
+        text-align: right;
+        padding-top: 0.7rem; }
+        .shop ul li:nth-child(1) img {
+          width: 4.5rem;
+          height: 4.5rem; }
+      .shop ul li:nth-child(2) {
+        width: 16.5rem;
+        height: 100%;
+        padding-left: 1rem;
+        padding-top: 0.5rem; }
+        .shop ul li:nth-child(2) p:nth-child(1) {
+          zoom: 1; }
+          .shop ul li:nth-child(2) p:nth-child(1):after {
+            display: block;
+            clear: both;
+            content: ''; }
+          .shop ul li:nth-child(2) p:nth-child(1) img {
+            float: left;
+            margin-top: -0.2rem; }
+          .shop ul li:nth-child(2) p:nth-child(1) span {
+            display: inline-block;
+            font-size: 1rem;
+            height: 1.8rem;
+            line-height: 1.8rem;
+            padding-left: 0.2rem; }
+        .shop ul li:nth-child(2) p:nth-child(2) {
+          zoom: 1;
+          padding-left: 2rem; }
+          .shop ul li:nth-child(2) p:nth-child(2):after {
+            display: block;
+            clear: both;
+            content: ''; }
+          .shop ul li:nth-child(2) p:nth-child(2) span {
+            float: left;
+            margin-left: -0.4rem;
+            color: #FFC341; }
+            .shop ul li:nth-child(2) p:nth-child(2) span:nth-child(6) {
+              margin-left: 0;
+              margin-top: 0;
+              font-weight: 550; }
+        .shop ul li:nth-child(2) p:nth-child(3) {
+          color: #9B9B9B;
+          margin-top: 0.5rem; }
+      .shop ul li:nth-child(3) {
+        width: 4rem;
+        height: 100%;
+        padding-top: 3.8rem;
+        color: #9B9B9B;
+        margin-left: 3rem; }
+
+.guide {
+  width: 100%;
+  height: 2rem;
+  background: #FFFAE6; }
+  .guide p {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #FFA790; }
+
+.content {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  overflow: auto; }
+  .content ul {
+    width: 100%; }
+    .content ul li {
+      width: 100%;
+      height: 4rem;
+      border-bottom: 1px solid #FBFBFB;
+      zoom: 1; }
+      .content ul li:after {
+        display: block;
+        clear: both;
+        content: ''; }
+      .content ul li p {
+        float: left;
+        height: 100%;
+        width: 33.3%;
+        font-size: 1.2rem;
+        color: #6C6C6C;
+        line-height: 4rem; }
+        .content ul li p:nth-child(1) {
+          padding-left: 2rem; }
+        .content ul li p:nth-child(2) {
+          color: #FA5A4B;
+          text-align: center; }
+        .content ul li p:nth-child(3) {
+          text-align: right;
+          padding-right: 2rem; }
+          .content ul li p:nth-child(3) input {
+            width: 5rem;
+            height: 2.3rem;
+            background: #FA5A4B;
+            border-radius: 0.5rem;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 1.2rem; }
+
+/*# sourceMappingURL=choice.css.map */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	function post(url,data,success){
+		//当浏览器版本为高版本时创建ajax对象
+		if(window.XMLHttpRequest){
+			var oAjax = new XMLHttpRequest();
+		}else{
+			//否则为低版本浏览器创建的ajax对象
+			var oAjax = new ActiveXObject('Microsoft.XMLHTTP');
+		}
+		//设置open请求数据   请求为post url路径   设置为同步
+		oAjax.open('POST',url,true);
+		
+		//请求方式为post请求是必须设置请求头
+		oAjax.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+		
+		//发送请求(返回的数据)
+		oAjax.send(json2str(data));//a=1&b=2
+		
+		//设置请求事件
+		oAjax.onreadystatechange = function(){
+			if(oAjax.readyState == 4){
+				if(oAjax.status >=200 && oAjax.status<300 || oAjax.status == 340){
+					success && success(oAjax.responseText);
+				}
+			}
+		}
+		
+		
+	}
+	
+	
+	function json2str(json){
+		json.t = Math.random();
+		var arr = [];
+		for(var name in json){
+			arr.push(name+'='+json[name]);
+		}
+		return arr.join('&');
+	}
+	
+	//调用post函数
+	post('post.php',{a:1,b:2},function(str){
+		console.log(str);
+	})
+	
+	
+	
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			var arr = [];
+			var array = ["one","tow","three","four"];
+			for(var i = 0; i< array.length;i++){
+				var x = {}
+				x.no = i
+				x.text = array[i]
+				x.invoke = function(){
+					console.log(i);
+				}
+				arr.push(x);
+			}
+			arr[0].invoke();
+			arr[1].invoke();
+			arr[2].invoke();
+			arr[3].invoke();
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

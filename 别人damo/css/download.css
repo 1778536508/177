@@ -1,0 +1,91 @@
+* {
+  font-size: 16px; }
+
+.origin {
+  color: #ff8a00; }
+
+.fc-download-banner {
+  width: 100%; }
+  .fc-download-banner img {
+    width: 100%; }
+
+.fc-download-content {
+  width: 1000px;
+  margin: 35px auto 0; }
+  .fc-download-content h2 {
+    font-size: 30px;
+    color: #FF8A00;
+    font-weight: normal; }
+  .fc-download-content .fc-download-content-experienceAccount {
+    margin-top: 21px;
+    border-top: 1px solid #A70A0B;
+    padding-bottom: 56px;
+    padding-top: 30px; }
+    .fc-download-content .fc-download-content-experienceAccount form > label {
+      color: #333;
+      margin-top: 10px; }
+    .fc-download-content .fc-download-content-experienceAccount form .fc-four {
+      margin-left: 200px; }
+    .fc-download-content .fc-download-content-experienceAccount form .fc-ten {
+      margin-left: 200px; }
+    .fc-download-content .fc-download-content-experienceAccount form > [type='text'] {
+      width: 300px;
+      height: 30px;
+      margin-top: 10px;
+      font-size: 14px;
+      margin-left: 18px;
+      border: #ebebeb 1px solid;
+      padding-left: 6px; }
+    .fc-download-content .fc-download-content-experienceAccount form > input::-webkit-input-placeholder {
+      color: #333; }
+    .fc-download-content .fc-download-content-experienceAccount form > span {
+      margin-top: 10px;
+      color: #FF8A00;
+      margin-left: 10px; }
+    .fc-download-content .fc-download-content-experienceAccount form > p {
+      text-align: right;
+      margin-right: 92px;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #898989; }
+    .fc-download-content .fc-download-content-experienceAccount form > textarea {
+      width: 982px;
+      height: 108px;
+      border: #ebebeb 1px solid;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-left: 10px; }
+    .fc-download-content .fc-download-content-experienceAccount form > textarea::-webkit-input-placeholder {
+      color: #333; }
+    .fc-download-content .fc-download-content-experienceAccount form > div {
+      margin-top: 10px; }
+      .fc-download-content .fc-download-content-experienceAccount form > div span {
+        color: #777; }
+      .fc-download-content .fc-download-content-experienceAccount form > div button {
+        width: 208px;
+        height: 46px;
+        float: right;
+        background: #383838;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        font-size: 26px;
+        word-spacing: 14px;
+        text-align: center; }
+      .fc-download-content .fc-download-content-experienceAccount form > div button:hover {
+        background: #FF8A00; }
+
+.fc-download-explain {
+  background: #F8F8F8; }
+  .fc-download-explain ul {
+    list-style: none;
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden; }
+    .fc-download-explain ul li {
+      font-size: 14px;
+      margin-top: 20px;
+      line-height: 20px;
+      color: #a1a1a1; }
+
+/*# sourceMappingURL=download.css.map */

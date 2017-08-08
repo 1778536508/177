@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="地域三级联动插件/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!--省-->
+		<select name="a"></select>
+		<!--市-->
+		<select name="b"></select>
+		<!--县-->
+		<select name="c"></select>
+		
+		<button>确定</button>
+		<p>
+			我所在的位置
+			<p id="p1"></p>
+		</p>
+		
+		<script type="text/javascript">
+			
+			new PCAS("a","b","c")
+
+		</script>
+		<script type="text/javascript">
+	
+		
+			var sele = document.getElementsByTagName("select");
+			var p1 = document.getElementById("p1");
+			
+			
+			
+			document.getElementsByTagName("button")[0].onclick = function(){
+				for(var i=0;i<sele.length;i++){
+					console.log(sele[i].value);
+					p1.innerHTML += sele[i].value;
+				}
+			}
+			
+	
+			
+			
+			
+		</script>
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,150 @@
+header {
+  width: 1000px;
+  height: 115px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 16px; }
+  header > p {
+    position: absolute;
+    right: 0px;
+    font-size: 16px; }
+    header > p a:nth-child(1) {
+      color: #ff9324; }
+    header > p a:nth-child(2) {
+      color: #2d2c2c;
+      text-decoration: none; }
+  header img {
+    width: 225px;
+    height: 45px;
+    margin-top: 50px; }
+  header ul {
+    padding-left: 288px;
+    margin-top: -16px; }
+    header ul li {
+      float: left;
+      padding-left: 40px; }
+      header ul li a {
+        color: #2d2c2c; }
+        header ul li a:hover {
+          text-decoration: none;
+          color: #ff8a00; }
+  header > div {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #fff 0%, #e60416 50%, #fff 100%);
+    margin-top: 34px; }
+
+#h-di1 {
+  width: 100%;
+  background: #5b5b5b;
+  height: 188px; }
+  #h-di1 footer {
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px; }
+    #h-di1 footer ul {
+      float: left;
+      color: white;
+      margin-top: 40px; }
+      #h-di1 footer ul li > a {
+        color: white; }
+        #h-di1 footer ul li > a:hover {
+          color: #ff8a00;
+          text-decoration: none; }
+    #h-di1 footer ul:nth-child(1) {
+      width: 160px;
+      text-align: center;
+      border-right: 1px solid white; }
+      #h-di1 footer ul:nth-child(1) li {
+        margin-bottom: 20px; }
+    #h-di1 footer ul:nth-child(2) {
+      width: 208px;
+      text-align: center;
+      border-right: 1px solid white; }
+      #h-di1 footer ul:nth-child(2) li {
+        margin-bottom: 20px; }
+    #h-di1 footer ul:nth-child(3) {
+      width: 178px;
+      text-align: center;
+      border-right: 1px solid white; }
+      #h-di1 footer ul:nth-child(3) li {
+        margin-bottom: 20px; }
+    #h-di1 footer ul:nth-child(4) {
+      width: 260px;
+      text-align: center; }
+      #h-di1 footer ul:nth-child(4) li:nth-child(3) img {
+        padding-right: 4px; }
+    #h-di1 footer ul:nth-child(5) {
+      text-align: center; }
+      #h-di1 footer ul:nth-child(5) li:nth-child(1) {
+        font-size: 28px; }
+    #h-di1 footer .h-ul > li > a:hover {
+      color: #ff8a00; }
+
+#h-di2 {
+  width: 100%;
+  background: #333333;
+  text-align: center;
+  padding: 15px; }
+  #h-di2 p {
+    color: white; }
+
+.origin {
+  color: #ff8a00; }
+
+.fc-map-content {
+  width: 1000px;
+  margin: 38px auto 66px; }
+  .fc-map-content > h1 {
+    width: 100%;
+    background: #A38C71;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 28px; }
+  .fc-map-content > div {
+    width: 1000px;
+    margin: 58px auto 310px; }
+    .fc-map-content > div h2 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: normal; }
+    .fc-map-content > div > div {
+      width: 772px;
+      border-top: 1px solid #333;
+      margin: 32px auto 0; }
+    .fc-map-content > div > ul {
+      margin: 0 auto;
+      margin-left: 44px; }
+      .fc-map-content > div > ul li {
+        float: left;
+        font-size: 14px;
+        color: #303030;
+        width: 142px; }
+        .fc-map-content > div > ul li:nth-child(2) {
+          margin-left: 30px; }
+        .fc-map-content > div > ul li:nth-child(3) {
+          margin-left: 10px; }
+        .fc-map-content > div > ul li:nth-child(4) {
+          margin-left: 10px; }
+        .fc-map-content > div > ul li:nth-child(5) {
+          margin-left: 10px; }
+        .fc-map-content > div > ul li:last-child {
+          float: right;
+          margin-right: 43px; }
+        .fc-map-content > div > ul li p {
+          width: 1px;
+          background: #333;
+          height: 36px;
+          margin: 0 auto; }
+        .fc-map-content > div > ul li div {
+          text-align: center;
+          margin-top: 22px; }
+          .fc-map-content > div > ul li div:nth-child(2) {
+            margin-top: 6px; }
+          .fc-map-content > div > ul li div:nth-child(3) {
+            margin-top: 32px; }
+          .fc-map-content > div > ul li div .origin:hover {
+            color: #ff8a00; }
+
+/*# sourceMappingURL=map.css.map */

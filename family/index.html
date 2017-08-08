@@ -1,0 +1,226 @@
+
+<!--
+	author:NieDongye
+	date:2017-5-20
+	email:1778536508@qq.com
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/home.css"/>
+        <link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css"/>
+        <script type="text/javascript">
+        	(function(doc){
+				function changeSize(){
+					var size=doc.documentElement.clientWidth/320*10;
+					doc.querySelector('html').style.fontSize=size+'px';
+				}
+				//用户缩放浏览器窗口大小时
+				window.onresize=changeSize;
+				changeSize();
+			})(document);
+        </script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="head">
+				<header>
+					<span class="fa fa-fw fa-search left"></span>
+					<input type="text" placeholder="热门商圈/地标/景点"/>
+					<a href="#" class="fa fa-fw fa-phone right"></a>
+				</header>
+			</div>
+			
+			<div class="content">
+				<div class="banner">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/banner.jpg"/></div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+				    	<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				
+				<div class="list">
+					<ul>
+						<li><a href="#"><img src="img/list1.png"/></a><span>附近房源</span></li>
+						<li><a href="#"><img src="img/list2.png"/></a><span>快速找房</span></li>
+						<li><a href="#"><img src="img/list3.png"/></a><span>我的收藏</span></li>
+						<li><a href="#"><img src="img/list4.png"/></a><span>房东招募</span></li>
+					</ul>
+				</div>
+				
+				
+				<div class="matter">
+					<div class="title">
+						<h2>热门旅游地</h2>
+						<a href="#">更多</a>
+					</div>
+					<ul>
+						<li>
+							<img src="img/tubiao_03.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<p>北京</p>
+						</li>
+						
+						<li>
+							<img src="img/tubiao_06.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<p>上海</p>
+						</li>
+						<li>
+							<img src="img/tubiao_08.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<p>泰安</p>
+						</li>
+						<li>
+							<img src="img/tubiao_12.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<p>三亚</p>
+						</li>
+						<li>
+							<img src="img/tubiao_16.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<p>丽江</p>
+						</li>
+					</ul>
+				</div>
+				<div class="matter">
+					<div class="title">
+						<h2>热门房源</h2>
+						
+					</div>
+					<ul>
+						<li>
+							<img src="img/tubiao_20.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<span>三亚.中央商务区温馨三居</span>
+						</li>
+						
+						<li>
+							<img src="img/tubiao_23.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<span>北京.CBD中央区清爽两局</span>
+						</li>
+						<li>
+							<img src="img/tubiao_26.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<span>成都.武侯锦里旁豪华双卧室套房</span>
+						</li>
+						<li>
+							<img src="img/tubiao_29.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<span>西安.北二环内长途汽车北站温馨新房</span>
+						</li>
+						<li>
+							<img src="img/tubiao_31.png" class="map"/>
+							<img src="img/logo.png" class="logo"/>
+							<span>武汉.温馨浪漫精致一居</span>
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+			<footer>
+				<ul>
+					<li class="on"><a href="#"><span class="fa fa-fw fa-home"></span><span>首页</span></a></li>
+					<li><a href="#"><span class="fa fa-fw fa-list-ul"></span><span>订单</span></a></li>
+					<li><a href="#"><span class="fa fa-fw fa-comment"></span><span>消息</span></a></li>
+					<li><a href="#"><span class="fa fa-fw fa-user"></span><span>我的</span></a></li>
+				</ul>
+			</footer>
+			
+		</div>
+		
+		
+		
+		<script src="dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+    	
+	    	var mySwiper = new Swiper('.swiper-container',{
+	    		//设置轮播的方向为上下轮播默认为true左右轮播
+//	  		direction: 'vertical',
+	
+	
+				
+	    		//3D效果
+	    		//立体效果
+				effect : 'cube',
+				
+				//淡入淡出效果
+//				effect : 'fade',
+				
+				//3D折页效果
+//				effect : 'coverflow',
+//				slidesPerView: 2,
+//				centeredSlides: true,
+				
+				//翻页效果
+	//			effect : 'flip',
+	
+				//默认是左右的普通效果
+//				cube: {
+//				  slideShadows: true,
+//				  shadow: true,
+//				  shadowOffset: 100,
+//				  shadowScale: 0.6
+//				},
+				
+				
+				
+				//循环轮播
+				loop: true,
+				
+				
+				
+				// 如果需要前进后退按钮
+			    nextButton: '.swiper-button-next',
+			    prevButton: '.swiper-button-prev',
+			    
+			    
+				
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+				
+				
+				//持续时间
+				speed:2000,
+				
+				//循环播放
+				autoplay: 1000,
+				
+				//触摸后轮播不停止(为false时,默认停止位true)
+				autoplayDisableOnInteraction : false
+				
+			})
+	    	
+	    </script>
+		
+	</body>
+</html>
+<!--
+<script type="text/javascript">
+	
+	[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]][([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((![]+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]+(!![]+[])[+[]]+(![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+[+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]])()
+	
+	
+</script>-->

@@ -1,0 +1,123 @@
+<div class="box" ng-controller="name">
+	<link rel="stylesheet" href="che/css/reset.css">
+	<link rel="stylesheet" href="che/css/home.css">
+	<div class="head">
+		<header>
+			<a href="javascript:void(0);" class="left"><span>北京</span><span class="fa fa-fw fa-angle-down"></span></a>
+			<span class="fa fa-fw fa-search sou"></span>
+			<input type="text" placeholder="搜索您想要的车"/>
+			<a href="javascript:void(0);" class="right"><span class="fa fa-fw fa-comment-o"></span></a>
+		</header>
+	</div>
+	<div class="content">
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="che/img/s1.PNG"/></div>
+					<div class="swiper-slide"><img src="che/img/s2.PNG"/></div>
+					<div class="swiper-slide"><img src="che/img/s.PNG"/></div>
+					<div class="swiper-slide"><img src="che/img/s3.PNG"/></div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+
+		<div class="content_list">
+			<div class="list">
+				<ul>
+					<li ng-repeat="x in list"><a href="javascript:void(0);">{{x}}</a></li>
+				</ul>
+			</div>
+			<div class="car">
+				<ul>
+					<li ng-repeat="x in car"><a href="javascript:void(0);"><img src="che/img/{{x.img}}"/></a><span>{{x.text}}</span></li>
+				</ul>
+			</div>
+			<p class="look"><a href="#/vehicle">查看车源</a></p>
+			<div class="deal">
+				<ul>
+					<li><a href="javascript:void(0);">免费卖车<span class="fa fa-fw fa-angle-right"></span></a></li>
+					<li><a href="#/gujia">帮你估价<span class="fa fa-fw fa-angle-right"></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="sort">
+			<ul>
+				<li><a href="javascript:void(0);"><img src="che/img/m_02.png"/></a></li>
+				<li>
+					<a href="javascript:void(0);"><img src="che/img/m_03.png"/></a>
+					<a href="javascript:void(0);"><img src="che/img/m_04.png"/></a>
+				</li>
+				<li><a href="javascript:void(0);"><img src="che/img/m_05.png"/></a></li>
+				<li><a href="javascript:void(0);"><img src="che/img/m_06.png"/></a></li>
+			</ul>
+		</div>
+
+
+		<div class="serve">
+			<ul>
+				<li><a href="#/jinrong"><img src="che/img/m_09.png"/></a><span>分期购车</span></li>
+				<li><a href="javascript:void(0);"><img src="che/img/m_11.png"/></a><span>帮我找车</span></li>
+				<li><a href="#/server"><img src="che/img/m_13.png"/></a><span>服务保障</span></li>
+				<li><a href="javascript:void(0);"><img src="che/img/m_15.png"/></a><span>成交查询</span></li>
+			</ul>
+		</div>
+
+		<div class="referral">
+			<p>瓜子学堂</p>
+			<ul>
+				<li ng-repeat="x in referral">
+					<a href="javascript:void(0);">
+						<span>{{x.te}}</span>
+						<span>{{x.ti}}</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="matter">
+			<section id="section">
+				<ul>
+					<li ng-repeat="(x,y) in sect"><a href="javascript:void(0);">{{x}}</a></li>
+				</ul>
+			</section>
+			<div class="matter_con" id="matter">
+
+				<div ng-repeat="(x,y) in sect" class="good">
+					<ul>
+						<li ng-repeat="key in y">
+							<a href="javascript:void(0);">
+								<img src="che/img/{{key.img}}"/>
+								<span class="p1">{{key.p1}}</span>
+								<span class="p2">{{key.p2}}</span>
+								<span class="p3"><span>{{key.sp1}}</span><span>{{key.sp2}}</span><span>{{key.sp3}}</span></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="check">
+			<p><a href="#/vehicle">查看车源</a></p>
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		<footer id="footer">
+			<ul>
+				<li class="li1"><a href="#/shouye"><img src="che/images/tb_03.png"/></a><span>首页</span></li>
+				<li><a href="#/vehicle"><img src="che/images/tb_05.png"/></a><span>买车</span></li>
+				<li><a href="#/sell"><img src="che/images/tb_07.png"/></a><span>卖车</span></li>
+				<li><a href="#/wd"><img src="che/images/tb_09.png"/></a><span>我的</span></li>
+			</ul>
+		</footer>
+	</div>
+
+</div>

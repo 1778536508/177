@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		
+		html {
+			font-family: 微软雅黑;
+		}
+		
+		.denglu {
+			width: 300px;
+			height: 200px;
+			background-color: #b6e2ff;
+			border: 1px solid gainsboro;
+			position: absolute;
+			left: 40%;
+			top: 35%;
+			padding: 30px;
+			display: none;
+		}
+		
+		.denglu p {
+			margin-bottom: 20px;
+		}
+		
+		.denglu>form>input {
+			margin-left: 60px;
+			float: left;
+		}
+	</style>
+
+	<body>
+		<div class="denglu">
+			<form>
+				
+				<p>用 户:<input type="text" id="yh"></p>
+				<p>密 码:<input type="text" id="mima"></p>
+				<input type="submit" value="确定" class="queding" id="true">
+				<input type="submit" value="取消" class="qvxiao" id="false">
+			</form>
+		</div>
+		<button id="button">获取数据</button>
+		
+		
+		
+		
+		
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+		var but = document.getElementById('button');
+		var input1 = document.getElementById('true');
+		var input2 = document.getElementById('false');
+		var input3 = document.getElementById('yh');
+		var input4 = document.getElementById('mima');
+		var keywords = [];
+		input1.onclick = function(){
+				var value =input3.value;
+				var value1 = input4.value;
+				keywords.push(value);
+				keywords.push(value1);
+				var jsonStr = JSON.stringify(keywords);
+            localStorage.setItem('keywords', jsonStr);
+				
+			}
+			but.onclick =function(){
+				var keywordsStr = localStorage.getItem('keywords');
+            var keywords = JSON.parse(keywordsStr);
+				if(keywordsStr!==null){
+					alert("登录")
+				}else{
+//					alert("请登录")
+					$('.denglu').show()
+				}
+		
+//          alert(keywords);		
+			}
+		</script>
+	</body>
+
+</html>

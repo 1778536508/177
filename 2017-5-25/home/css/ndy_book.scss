@@ -1,0 +1,226 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;  
+    font-family: "微软雅黑";  
+}
+%full{
+    width: 100%;
+    height: 100%;
+}
+@mixin pos($p:absolute){
+    position: $p;
+}
+@mixin clearfix{
+    zoom: 1;
+    &:after{ 
+      display: block;
+      clear: both;
+      content: '';
+    }
+}
+html,body,.box{
+    @extend %full;
+    
+}
+.box{
+    background: url(../images/banner.jpg);
+    background-size:100% 120% ;
+    background-position:0 50%;
+    overflow: hidden;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.3);
+    .nav_dao{
+        width: 1020px;
+        height: 100%;
+        margin: 0 auto;
+        @include clearfix;
+//      border: 1px solid;
+        p{
+            float: left;
+            &:nth-child(1){
+                width: 210px;
+                height: 30px;
+                border-right: 1px solid rgba(255,255,255,0.5);
+                margin-top: 20px;
+                img{
+                    width: 174px;
+                    height: 42px;
+                    margin-top: -10px;
+                }
+            }
+            &:nth-child(3){
+//              border: 1px solid ;
+                width: 118px;
+                height: 100%;
+                text-align: center;
+                line-height: 60px;
+                a{
+                    color: white;
+                    margin-left: 20px;
+                }
+            }
+        }
+        ul{
+            float: left;
+            @include clearfix;
+            height: 100%;
+            padding-left: 30px;
+            li{
+                width: 110px;
+                height: 100%;
+                float: left;
+//              border: 1px solid;
+                text-align: center;
+                line-height: 60px;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+                &.in{
+                    background: rgba(255,255,255,0.3);
+                }
+            }
+            li:hover{
+                background: rgba(255,255,255,0.3);
+            }
+        }
+    }
+}
+
+.sou{
+    width: 590px;
+    height: 52px;
+//  border: 1px solid;
+    @include clearfix;
+    margin-left: 381px;
+    margin-top: 149px;
+    input{
+        width: 532px;
+        height: 100%;
+        float: left;
+        font-size: 15px;
+        padding-left: 10px;
+        outline: none;
+    }
+    a{
+      img{
+        width: 56px;
+        height: 100%;
+        float: left;
+        }  
+    }
+    a:hover{
+        background: rgba(255,255,255,0.3);
+        z-index: 999;
+    }
+    
+}
+
+.content{
+    width: 532px;
+    height: 200px;
+    background: rgba(255,255,255,0.5);
+    @include pos();
+    top: 261px;
+    left: 382px;
+    overflow: hidden;
+    display: none;
+    z-index: 999;
+    ol{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        border: 1px solid #EBEBEB;
+        li{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+        li:hover{
+            background: #F8F8F8;
+        }
+    }
+}
+
+
+
+
+
+.list{
+    width: 100%;
+    p{
+        font-size: 16px;
+        color: #1e1900;
+        text-align: center;
+        margin-top: 23px;
+        a{
+            font-size: 16px;
+            color: #1e1900;
+            margin-left: 28px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.footer{
+    width: 100%;
+    height: 154px;
+    background: rgba(255,255,255,0.3);
+    @include pos(fixed);
+    bottom: 0;
+    left: 0;
+    .footer_list{
+        width: 1020px;
+        margin: 0 auto;
+        @include clearfix;
+//      background: blue;
+        ul{
+            width: 900px;
+            float: left;
+            @include clearfix;
+            padding-top: 10px;
+            li{
+                float: left;
+                width: 25%;
+                margin-top: 2px;
+          
+                a{
+                    font-size: 12px;
+                }  
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        div{
+            float: right;
+            margin-top: 20px;
+            img{
+                width: 93px;
+                height: 93px;
+            }
+        }
+        
+    }
+    p{
+            text-align: center;
+            font-size: 12px;
+            @include pos(relative);
+            img:nth-child(1){
+                width: 15px;
+                height: 16px;
+                @include pos();
+                left: 708px;
+                bottom: 0;
+            }
+        }
+}

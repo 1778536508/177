@@ -1,0 +1,208 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  font-family: "微软雅黑"; }
+
+header {
+  width: 100%;
+  height: 12.6rem;
+  background: #21ae39;
+  position: relative; }
+  header .head1 {
+    width: 100%;
+    text-align: center; }
+    header .head1 .img1 {
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      top: .9rem;
+      left: .8rem; }
+    header .head1 .img2 {
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      top: .9rem;
+      right: .8rem; }
+    header .head1 .img3 {
+      width: 6rem;
+      height: 6rem;
+      margin-top: 1.2rem; }
+    header .head1 p a {
+      font-size: 15px;
+      color: white;
+      line-height: 5rem; }
+  header .bian {
+    width: 100%; }
+    header .bian img {
+      width: 100%; }
+  header .head2 {
+    width: 100%;
+    margin-top: 1.2rem; }
+    header .head2 p {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 1.5rem 0 1.5rem 1rem;
+      border-bottom: 1px solid #e7e7e7; }
+    header .head2 ul {
+      width: 100%; }
+      header .head2 ul li div {
+        width: 25%;
+        text-align: center;
+        font-weight: 600;
+        float: left;
+        margin-bottom: 1rem; }
+        header .head2 ul li div img {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-top: 1rem; }
+        header .head2 ul li div a {
+          color: #000000; }
+
+.content {
+  width: 100%;
+  height: 500px;
+  background: #f7f7f7; }
+  .content .con1 {
+    width: 100%;
+    height: 11rem;
+    background: white; }
+    .content .con1 p {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 1.5rem 0 1.5rem 1rem;
+      border-bottom: 1px solid #e7e7e7; }
+    .content .con1 div {
+      width: 25%;
+      height: 5rem;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 1rem; }
+      .content .con1 div img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 1rem; }
+      .content .con1 div a {
+        color: #000000; }
+  .content .con2 {
+    width: 100%;
+    height: 4.5rem;
+    background: white;
+    position: relative;
+    border-top: 1px solid #e7e7e7; }
+    .content .con2 a {
+      width: 100%;
+      height: 4.5rem;
+      position: absolute; }
+      .content .con2 a .con2-i1 {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 1.2rem;
+        margin-left: 1.2rem; }
+      .content .con2 a label {
+        position: absolute;
+        top: 1.4rem;
+        left: 4rem;
+        font-size: 15px;
+        color: #000000; }
+      .content .con2 a .con2-i2 {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 1.4rem;
+        right: 1.2rem; }
+  .content .con21 {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7; }
+  .content .con3 {
+    width: 100%;
+    height: 4.7rem;
+    position: relative; }
+    .content .con3 div {
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      background: #e7e7e7;
+      top: 2.2rem;
+      left: 25%; }
+    .content .con3 p {
+      width: 20%;
+      text-align: center;
+      background: #f7f7f7;
+      position: absolute;
+      top: 1.6rem;
+      left: 40%; }
+  .content .con4 {
+    width: 100%;
+    height: 1110px;
+    background: white; }
+    .content .con4 ul {
+      width: 96%;
+      margin: 0 auto; }
+      .content .con4 ul li div {
+        float: left;
+        margin-top: .5rem;
+        width: 50%;
+        height: 100px;
+        border-bottom: 1px solid #e7e7e7;
+        padding-bottom: 10px; }
+        .content .con4 ul li div img {
+          width: 90%;
+          height: 90%;
+          margin-top: 5%;
+          margin-left: 5%; }
+        .content .con4 ul li div .p1 {
+          font-weight: 700;
+          margin-top: 5%; }
+          .content .con4 ul li div .p1 a {
+            color: #000000; }
+        .content .con4 ul li div .p2 {
+          color: #9c9a9c;
+          margin-top: 5%; }
+          .content .con4 ul li div .p2 a {
+            color: #9c9a9c; }
+        .content .con4 ul li div .p3 {
+          margin-top: 5%; }
+          .content .con4 ul li div .p3 a {
+            color: #f76539; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background: white;
+  border-top: 1px solid #efeff3;
+  padding-top: .5rem; }
+  footer ul {
+    width: 100%;
+    display: flex;
+    -webkit-justify-content: space-around; }
+    footer ul li {
+      text-align: center; }
+      footer ul li a {
+        display: block;
+        width: 4.5rem;
+        height: 2.1rem; }
+        footer ul li a img {
+          width: 80%; }
+      footer ul li span {
+        font-size: 1rem; }
+      footer ul li.li1 span {
+        color: #009e00; }
+
+/*# sourceMappingURL=wd.css.map */

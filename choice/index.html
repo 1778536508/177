@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="Myname" ng-controller="name">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>-->
+        <link rel="stylesheet" type="text/css" href="css/choice.css"/>
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        	(function(doc){
+				function changeSize(){
+					var size=doc.documentElement.clientWidth/320*10;
+					doc.querySelector('html').style.fontSize=size+'px';
+				}
+				//用户缩放浏览器窗口大小时
+				window.onresize=changeSize;
+				changeSize();
+			})(document);
+        </script>
+        <script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<a href="#" class="left"></a>
+				<label>4S店选择</label>
+			</header>
+			<div class="date" id="date">
+				<!--<ul id="pics">
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>
+					<li>
+						<p>05-13</p>
+						<p>今天</p>
+					</li>-->
+				</ul>
+			</div>
+			<div class="shop">
+				<ul>
+					<li><img src="img/{{data.img}}"/></li>
+					<li>
+						<p class="beijing">
+							<img src="img/{{data.im}}"/>
+							<span>{{data.h}}</span>
+						</p>
+						<p>
+							<span ng-repeat="x in ion" class="{{x.zi}}"></span>
+							<span>{{data.num}}</span>
+						</p>
+						<p>{{data.text}}</p>
+					</li>
+					<li>{{data.km}}</li>
+				</ul>
+			</div>
+			<div class="guide">
+				<p>{{data.con}}</p>
+			</div>
+			
+			
+			<div class="content">
+				<ul>
+					<li ng-repeat="y in str">
+						<p>{{y.date}}</p>
+						<p>{{y.money}}</p>
+						<p><input type="button" value="{{y.bug}}"/></p>
+					</li>
+				</ul>
+			</div>
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
+

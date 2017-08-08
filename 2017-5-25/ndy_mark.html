@@ -1,0 +1,540 @@
+<!--
+           作者：offline
+  	时间：2017-05-25
+           描述：
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="home/css/ndy_mark.css"/>
+		<link rel="stylesheet" type="text/css" href="home/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="home/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="home/swiper/css/swiper.min.css" />
+		<script src="home/swiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="home/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="nav.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.section-content{ 
+				border-bottom: 5px solid #0000FF; 
+				min-height: 500px; 
+				background: #eee; 
+				width: 100%; 
+				margin: auto; 
+				line-height: 500px; 
+				text-align: center; 
+				}
+			.nav-height{ 
+				position:relative; 
+				height: 50px;
+				width: 100%;
+				}
+			.nav-wrap { 
+				width: 100%;
+				height: 50px;
+				background: #fff;
+				}
+			.nav-wrap.navFix{
+				position: fixed;
+				top: 0;
+				left: 0;  
+				box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+				border-bottom:1px solid #e3e3e3\9; 
+				z-index: 99999;
+				} 
+			.nav-wrap ul {
+				padding: 0;
+				margin: 0 auto; 
+				width: 100%; 
+				display: block; 
+				border-bottom: 2px solid #eee;
+				padding-left: 300px;
+				}
+			.nav-wrap.navFix ul{ 
+				border-bottom: 0;
+				}
+			.nav-wrap li { 
+				display: inline-block; 
+				text-align: left;
+				height: 50px; 
+				line-height: 50px; 
+				float: left;
+				margin-left: 50px;
+				}
+			.nav-wrap li a {
+				display: block;
+				padding: 0 20px;
+				font-size:20px; 
+				color: #333; 
+				text-decoration: none;
+				}
+			.nav-wrap li a:hover{
+				color: #F1570B;
+				}
+			.nav-wrap li a.active {
+				border-bottom:2px solid #F1570B;
+				color: #F1570B;
+				}
+			.nav-mobile {
+				display: none;
+				font-weight: bold;
+				width: 100%;
+				}
+			.click-me {
+				width: 150px;
+				height: 30px;
+				 background: #4680d1;
+				 color: white; 
+				 text-align: center;
+				 line-height: 30px;
+				 }
+			.click-me a {
+				display: block;
+				color: white;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			
+			<div class="fhy-header">
+			    <div class="fhy-header-top">
+			        <div class="fhy-header-top-c">
+			            <a href="javascript:;" id="fhy-guanzhu"><span>关注我们:</span></a>
+			            <div class="fhy-header-top-x">
+			                <a href="javascript:;">加入我们</a>
+			                <a href="javascript:;">帮助中心</a>
+			                <a id="fhy-erweima" href="javascript:;">微信自动服务平台
+			                    <div>
+			                        <img src="home/images/erweima.jpg">
+			                    </div>
+			                </a>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="fhy-header-nav">
+			        <div class="fhy-header-nav-c">
+			            <a href="javascript:;">
+			                <img src="home/images/xs2.png">
+			            </a>
+			            <div class="fhy-header-nav-r">
+			                <a href="javascript:;" class="active a1">首页</a>
+			                <a href="javascript:;">消费分期</a>
+			                <a href="javascript:;">商户之家</a>
+			                <a href="javascript:;">联系我们</a>
+			                <a href="javascript:;">关于佰仟</a>
+			                <a href="javascript:;">佰仟真信</a>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="home/images/banner4.jpg"/></div>
+						<div class="swiper-slide"><img src="home/images/banner5.jpg"/></div>
+						<div class="swiper-slide"><img src="home/images/banner6.jpg"/></div>
+					</div>
+					<!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="add">
+				<h3>加入佰仟四大理由</h3>
+				<div class="con">
+					<ul>
+						<li>
+							<img src="home/images/xs4.png" />
+							<p>提升销售</p>
+							<p>降低支付门槛</p>
+						</li>
+						<li>
+							<img src="home/images/dc_03.jpg" />
+							<p>提升销售</p>
+							<p>降低支付门槛</p>
+						</li>
+						<li>
+							<img src="home/images/dc_05.jpg" />
+							<p>提升销售</p>
+							<p>降低支付门槛</p>
+						</li>
+						<li>
+							<img src="home/images/xs4.png" />
+							<p>提升销售</p>
+							<p>降低支付门槛</p>
+						</li>
+						<li>
+							<img src="home/images/xs3.png" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div class="term">
+				<div class="term_list">
+					<h3>覆盖商品</h3>
+					<ul>
+						<li><a href="javascript:void(0);"><img src="home/images/a1.png"/><span>3C数码</span><strong class="span">手机<br/>平板电脑</strong></a></li>
+						<li><a href="javascript:void(0);"><img src="home/images/a2.png"/><span>家居用品</span><strong class="span">白色家电<br/>黑色家电<br/>家具</strong></a></li>
+						<li><a href="javascript:void(0);"><img src="home/images/a4.png"/><span>电动车摩托车</span><strong class="span">电动车<br/>摩托车<br/>自行车</strong></a></li>
+						<li><a href="javascript:void(0);"><img src="home/images/a5.png"/><span>时尚消费品</span><strong class="span">笔记本电脑<br/>照相机<br/>上网本</strong></a></li>
+						<li><a href="javascript:void(0);"><img src="home/images/a6.png"/><span>教育产品</span><strong class="span">家教育儿<br/>语言培训<br/>职业培训</strong></a></li>
+					<ul/>
+					<p>更多商品加入中，满足您无所不在的消费需求...</p>
+				</div>
+			</div>
+			
+			<div class="work">
+				<h3>合作伙伴</h3>
+				<div>
+					<img src="home/images/image.png"/>
+				</div>
+			</div>
+			
+			
+			
+			<div class="nav-height" id="navHeight">
+				<nav class="nav-wrap" id="nav-wrap">
+				    <div class="nav-mobile">Click</div>
+				    <ul class="clearfix" style="width: 100%;">
+				      <li><a class="active in" href="#section1">产品介绍</a></li>
+				      <li><a class="" href="#section2">办理条件</a></li>
+				      <li><a class="" href="#section3">服务流程</a></li>
+				      <li><a class="" href="#section4">优惠活动</a></li>
+				    </ul>
+			 	</nav>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="comm" id="section1">
+				<h3>产品介绍</h3>
+				<ul>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="home/images/img2.jpg"/>
+						</a>
+						<p>
+							申请简便，审核快捷的消费分期服务。
+						</p>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="home/images/img1.jpg"/>
+						</a>
+						<p>
+							客户自主选择首付比例、还款期数，产品灵活多样。
+						</p>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="home/images/img3.jpg"/>
+						</a>
+						<p>
+							无需商品抵押担保，无需信用卡作为证明资料。
+						</p>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="home/images/img4.jpg"/>
+						</a>
+						<p>
+							只需简单资料，申请分期付款后按时还款，培养良好信用记录。覆盖多数消费需求。
+						</p>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<div class="commd" id="section2">
+				<h3>办理条件</h3>
+				<div>
+					<img src="home/images/tupian.jpg"/>
+				</div>
+			</div>
+			
+			<div class="liucheng" id="section3">
+				<h3>服务流程</h3>
+				<div>
+					<img src="home/images/liucheng.png"/>
+				</div>
+			</div>
+			
+			
+			<div class="mova" id="section4">
+				<h3 class="h3">优惠活动</h3>
+				<ul>
+					<li>
+						<h3>一年只此一次！......</h3>
+						<p>春风十里，不如收礼~听说.........  </p>
+					</li>
+					<li>
+						<img src="home/images/b4.jpg"/>
+					</li>
+					<li>
+						<h3>鸡年“购”新机，你准....</h3>
+						<p>鸡年“购”新机，快来看看吧！</p>
+					</li>
+					<li>
+						<img src="home/images/b2.jpg"/>
+					</li>
+					<li>
+						<img src="home/images/b2.jpg"/>
+					</li>
+					<li>
+						<h3>双11，欢节.....</h3>
+						<p>双11，佰仟“机”..........</p>
+					</li>
+					<li>
+						<img src="home/images/b3.jpg"/>
+					</li>
+					<li>
+						<h3>双节购，好机惠！.......</h3>
+						<p>佰仟优惠大促销，...........</p>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<p class="cha"><a href="javascript:void(0);">查看全部促销活动<span class="fa fa-fw fa-chevron-circle-right"></span></a></p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="code" id="code">
+				<img src="home/images/xs22.png"/>
+				<p id="rem">X</p>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="fhy-footer">
+			    <div class="fhy-footer-nav">
+			        <div class="fhy-footer-nav-c">
+			            <ul class="fhy-footer-nav-left">
+			                <li>
+			                    <h3>荣誉佰仟</h3>
+			                    <a href="javascript:;">荣誉奖项</a>
+			                    <a href="javascript:;">媒体报道</a>
+			                    <a href="javascript:;">社会责任</a>
+			                </li>
+			                <li>
+			                    <h3>关于佰仟</h3>
+			                    <a href="javascript:;">公司简介</a>
+			                    <a href="javascript:;">佰仟公告</a>
+			                    <a href="javascript:;">视频专区</a>
+			                </li>
+			                <li>
+			                    <h3>客服服务</h3>
+			                    <a href="javascript:;">荣誉奖项</a>
+			                    <a href="javascript:;">媒体报道</a>
+			                    <a href="javascript:;">社会责任</a>
+			                    <a href="javascript:;">债权转让查询</a>
+			                </li>
+			                <li>
+			                    <h3>其他链接</h3>
+			                    <a href="javascript:;">优惠活动</a>
+			                </li>
+			            </ul>
+			            <div class="fhy-footer-nav-center">
+			                <div class="fhy-footer-nav-center-erweima">
+			                    <img src="home/images/xs20.png">
+			                    <p>佰仟官方微信</p>
+			                </div>
+			                <div class="fhy-footer-nav-center-erweima">
+			                    <img src="home/images/xs20.png">
+			                    <p>佰仟官方微信</p>
+			                </div>
+			            </div>
+			            <div class="fhy-footer-nav-right">
+			                <p>消费金融服务热线:
+			                    <span>400&nbsp;&nbsp;998&nbsp;&nbsp;7101&nbsp;&nbsp;</span>
+			                </p>
+			                <p>
+			                    &nbsp;&nbsp;
+			                </p>
+			                <p>消费金融服务热线:
+			                    <span>400&nbsp;&nbsp;998&nbsp;&nbsp;7101&nbsp;&nbsp;</span>
+			                </p>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="fhy-footer-f">
+			        <div class="fhy-footer-f-c">
+			            <span>友情链接:</span>
+			            <a href="javascript:;">
+			                <img src="home/images/xs23.png">
+			            </a>
+			            <a href="javascript:;">
+			                <img src="home/images/xs24.png">
+			            </a>
+			            <a href="javascript:;">
+			                <img src="home/images/xs25.png">
+			            </a>
+			            <a href="javascript:;">
+			                <img src="home/images/xs26.png">
+			            </a>
+			            <a href="javascript:;">
+			                <img src="home/images/xs27.png">
+			            </a>
+			            <p>
+			                Copyright © 2014 billionscredit.com,All Rights Reserved 深圳市佰仟金融服务有限公司 版权所有
+			                <a href="javascript:;">粤ICP备 14012749号-4</a>
+			            </p>
+			        </div>
+			    </div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	//轮播图
+	var mySwiper = new Swiper('.swiper-container', {
+		//设置轮播的方向为上下轮播默认为true左右轮播
+		//	  		direction: 'vertical',
+
+		//3D效果
+		//立体效果
+//						effect : 'cube',
+
+		//淡入淡出效果
+//		effect: 'fade',
+
+		//3D折页效果
+//						effect : 'coverflow',
+//						slidesPerView: 2,
+//						centeredSlides: true,
+
+		//翻页效果
+//					effect : 'flip',
+
+		//默认是左右的普通效果
+						cube: {
+						  slideShadows: true,
+						  shadow: true,
+						  shadowOffset: 100,
+						  shadowScale: 0.6
+						},
+
+		//循环轮播
+		loop: true,
+
+		//				// 如果需要前进后退按钮
+		//			    nextButton: '.swiper-button-next',
+		//			    prevButton: '.swiper-button-prev',
+
+		// 如果需要分页器
+						pagination: '.swiper-pagination',
+
+		//持续时间
+		speed: 2000,
+
+		//循环播放
+		autoplay: 1000,
+
+		//触摸后轮播不停止(为false时,默认停止位true)
+		autoplayDisableOnInteraction: false
+
+	})
+	
+	
+	
+
+	
+	$("#rem").click(function(){
+		$("#code").css('display','none');
+	})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			//内容信息导航吸顶
+			$(document).ready(function(){ 
+				var navHeight= $("#navHeight").offset().top; 
+				var navFix=$("#nav-wrap"); 
+				$(window).scroll(function(){ 
+					if($(this).scrollTop()>navHeight){ 
+						navFix.addClass("navFix"); 
+					} 
+					else{ 
+						navFix.removeClass("navFix"); 
+					} 
+				}) 
+			})
+			//内容信息导航锚点
+			   $('.nav-wrap').navScroll({
+			      mobileDropdown: true,
+			      mobileBreakpoint: 768,
+			      scrollSpy: true
+			    });
+			
+			    $('.click-me').navScroll({
+			      navHeight: 0
+			    });
+			
+			    $('.nav-wrap').on('click', '.nav-mobile', function (e) {
+			      e.preventDefault();
+			      $('.nav-wrap ul').slideToggle('fast');
+			});
+	
+	
+	
+	
+	
+	
+	
+</script>

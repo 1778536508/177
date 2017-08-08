@@ -1,0 +1,85 @@
+[
+  {
+    "menuId": "1",
+    "menuName": "saas系统",
+    "img":"tubiao1.jpg",
+    "menuUrl": "",
+    "parentId": "-1",
+    "children": [
+      {
+        "menuId": "3",
+        "menuName": "积分管理",
+        "img":"tubiao4.jpg",
+        "menuUrl": "/demo/demo/querypage",
+        "parentId": "1",
+        "children": [
+          {
+            "menuId": "9",
+            "menuName": "增加积分",
+            "img":"tubiao5.jpg",
+            "menuUrl": "/demo/demo/add",
+            "parentId": "3",
+            "children": []
+          }
+        ]
+      },
+      {
+        "menuId": "4",
+        "menuName": "财务管理",
+        "img":"tubiao4.jpg",
+        "menuUrl": "/demo/demo/fina",
+        "parentId": "1",
+        "children": []
+      },
+      {
+        "menuId": "5",
+        "menuName": "商品购买",
+        "img":"tubiao4.jpg",
+        "menuUrl": "/demo/demo/buy",
+        "parentId": "1",
+        "children": []
+      }
+    ]
+  },
+  {
+    "menuId": "2",
+    "menuName": "二手车系统",
+    "img":"tubiao1.jpg",
+    "menuUrl": "",
+    "parentId": "-1",
+    "children": [
+      {
+        "menuId": "6",
+        "menuName": "手车买卖管理",
+        "img":"tubiao4.jpg",
+        "menuUrl": "",
+        "parentId": "2",
+        "children": []
+      },
+      {
+        "menuId": "7",
+        "menuName": "二手车信息管理",
+        "img":"tubiao4.jpg",
+        "menuUrl": "",
+        "parentId": "2",
+        "children": []
+      },
+      {
+        "menuId": "8",
+        "menuName": "交易",
+        "img":"tubiao4.jpg",
+        "menuUrl": "",
+        "parentId": "2",
+        "children": []
+      }
+    ]
+  },
+  {
+    "menuId": "9",
+    "menuName": "其他系统",
+    "img":"tubiao1.jpg",
+    "menuUrl": "",
+    "parentId": "-1",
+    "children": []
+  }
+]

@@ -1,0 +1,194 @@
+<!--
+	author:NieDongye
+	date:2017-5-12
+	email:1778536508@qq.com
+-->
+
+<!DOCTYPE html>
+<html ng-app="Myname" ng-controller="name">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="format-detection" content="telephone=no, email=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/program.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	    <script src="js/program.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			<!--头部-->
+			<header>
+				<!--导航-->
+				<section>
+					<a href="message.html" class="left"></a>
+					<label>智能保养方案</label>
+					<a href="" class="right">
+						<img src="img/images/pro_03.jpg"/>	
+					</a>
+					<a href="#" class="guest">
+						客服
+					</a>
+				</section>
+				<!--车款-->
+				<div class="car">
+					<ul>
+						<li><img src="img/images/pro_11.jpg"/></li>
+						<li>
+							<p>大众   宝来</p>
+							<p>2016款 1.6L 手动 时尚型</p>
+						</li>
+						<li>
+							<p><span>150000</span><span>公里</span></p>
+							<p>当前里程<img src="img/images/pro_14.jpg"></p>
+						</li>
+					</ul>
+				</div>
+				<!--保养方案-->
+				<div class="take">
+					<ul>
+						<li class="in"><a href="#">保养(3/9)</a></li>
+						<li><a href="#">养护(0/6)</a></li>
+						<li><a href="#">维修(0/9)</a></li>
+					</ul>
+					<p></p>
+				</div>
+				<!--项目-->
+				<div class="item">
+					<ul>
+						<li>4s店保养项目</li>
+						<li></li>
+						<li><span class="fa fa-fw fa-book"></span>保养手册</li>
+					</ul>
+				</div>
+			</header>
+			
+			
+			
+			
+			
+			
+			<!--内容-->
+			<div class="content">
+				<ul ng-repeat="x in data track by $index">
+					<li>
+						<div>
+							<!--{{x.Bol}}-->
+							<input type="checkbox" id="{{x.id}}" ng-checked="{{x.Bol}}" class="che" ng-click="add($index)"/>
+							<label for="{{x.id}}"></label>
+						</div>
+						<div>
+							<span>{{x.name}}</span>
+							<span>{{x.rise}}</span>
+						</div>
+						<div>
+							<span>￥{{x.cost}}</span>
+							<span>{{x.sign}}</span>
+							<span>{{x.cash}}</span>
+						</div>
+					</li>
+				</ul>
+				
+				
+			</div>
+			
+			
+			
+			<!--尾部-->
+			<footer>
+				<ul>
+					<li>
+						<div>
+							<span></span>
+							<span>￥{{num}}</span>
+						</div>
+						<div>
+							<p>{{con}}</p>
+							<p>省￥{{pro}}</p>
+						</div>
+					</li>
+					<li>
+						<a href="choice.html">下一步</a>
+					</li>
+				</ul>
+				<p class="shop">
+					<a href="#">
+						<span class="fa fa-fw fa-shopping-cart"></span>
+					</a>
+				</p>
+				<p class="number" id="number">{{bar}}</p>
+			</footer>
+			
+
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	
+	
+	
+	var app = angular.module("Myname",[]);
+	app.controller("name",function($scope,$http){
+		$http.get("data/program.json").success(function(res){
+			$scope.data = res;
+			console.log($scope.data);
+			
+			//数量
+			$scope.bar = 0;
+			//总价
+			$scope.num = 0;
+			//定义原价
+//			var con = 0;
+			$scope.con = 0;
+			//定义差价
+//			var pro = 0;
+			$scope.pro = 0;
+			
+			$scope.add = function(index){
+				let aInp=angular.element(document.getElementsByClassName("che"));
+				//当点击时将false变为true
+		        $scope.data[index].Bol = aInp[index].checked;
+		        //定义当前总价
+				var sum = 0;
+				//定义当前数量
+				var bat = 0;
+				//定义当前原价
+				var coon = 0;
+				//定义当前差价
+				var poce = 0;
+				
+				for(var i in $scope.data){
+					if($scope.data[i].Bol){
+						bat++;
+						sum += $scope.data[i].cash;	
+						coon = $scope.data[i].cost;
+						poce = coon - $scope.data[i].cash;
+					}
+				}
+				$scope.num = sum;	
+				$scope.bar = bat;
+				$scope.con = coon;
+				$scope.pro = poce;
+				
+				
+				if(sum == 0){
+					document.getElementById("number").style.display = "none";
+				}else{
+					document.getElementById("number").style.display = "block";
+				}
+	
+			}
+	
+		})
+	})
+	
+</script>
+

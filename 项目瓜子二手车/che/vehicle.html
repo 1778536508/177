@@ -1,0 +1,77 @@
+
+
+<div class="box" ng-controller="myCtrl1">
+    <link rel="stylesheet" href="che/css/css.css">
+    <header>
+        <a href="javascript:;"><span></span>北京</a>
+        <div><span></span><input type="text" placeholder="搜索您想要的车"></div>
+        <a href="javascript:;"><span></span></a>
+    </header>
+    <section>
+        <a href="javascript:;" title="zhineng">智能排序</a>
+        <a href="#/pinpai">品牌</a>
+        <a href="javascript:;" title="price">价格</a>
+        <a href="#/screen">筛选</a>
+        <p href="#/dy"><a href="#/dy"><span></span>订阅</a></p>
+    </section>
+    <div class="zhineng">
+        <a href="" class="active"><i></i>智能排序 </a>
+        <a href=""><i></i>最新上架</a>
+        <a href=""><i></i>价格最低</a>
+        <a href=""><i></i>价格最高</a>
+        <a href=""><i></i>车龄最短</a>
+        <a href=""><i></i>里程最少</a>
+    </div>
+    <div class="price">
+            <a href="">不限</a>
+            <a href="">3万以下</a>
+            <a href="">3-5万</a>
+            <a href="">5-7万</a>
+            <a href="">7-9万</a>
+            <a href="">9-12万</a>
+            <a href="">12-16万</a>
+            <a href="">16-20万</a>
+            <a href="">20万以上</a>
+            <div class="free">
+                <p>自定义价格  <span>(单位：万)</span><button>确定</button></p>
+                <div><span></span>
+                    <i></i>
+                    <span></span></div>
+                <div>
+                    <span>0</span>
+                    <span>10</span>
+                    <span>20</span>
+                    <span>30</span>
+                    <span>40</span>
+                    <span>不限</span>
+                </div>
+            </div>
+    </div>
+    <div id="active"></div>
+    <div class="content">
+        <dl ng-repeat="(i,j) in data">
+            <dt><img src="che/{{j.img}}" alt=""></dt>
+            <dd>
+                <span>{{j.name}}</span><br>
+                <span>{{j.distance}}</span>
+                <span class="{{j.class}}">{{j.new}}</span><br>
+                <span>{{price}}</span>
+                <span>{{j.newCar}}</span>
+                <del>{{j.newPrice}}</del>
+            </dd>
+        </dl>
+    </div>
+    <div class="blank">
+
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#/shouye"><img src="che/img/tb_031.png"/><br><span>首页</span></a></li>
+            <li class="li1"><a href="#/vehicle"><img src="che/img/tb_051.png"/><br><span>买车</span></a></li>
+            <li><a href="#/sell"><img src="che/img/tb_071.png"/><br><span>卖车</span></a></li>
+            <li><a href="#/wd"><img src="che/img/tb_091.png"/><br><span>我的</span></a></li>
+        </ul>
+    </footer>
+
+</div>

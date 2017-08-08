@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.origin{
+  color: #ff8a00;
+}
+//内容区
+.fc-termOfService-content{
+    width: 1000px;
+    margin: 38px auto 66px;
+    &>h1{
+        width: 100%;
+        background: #A38C71;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 28px;
+    }
+    dl{
+        list-style: none;
+        background: #fff;
+        font-size: 16px;
+        margin-top: 56px;
+        line-height: 30px;
+        dt{
+            font-weight: normal;
+            margin-top: 42px;
+            line-height: 30px;
+        }
+        dd{
+            line-height: 30px; 
+        }
+        p{
+            text-align: right;
+            margin-top: 74px;
+        }
+    }
+}

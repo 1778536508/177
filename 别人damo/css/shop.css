@@ -1,0 +1,39 @@
+.j-banner {
+  width: 100%; }
+  .j-banner img {
+    display: block;
+    width: 100%; }
+
+.j-ruanjian {
+  width: 1000px;
+  margin: 20px auto; }
+  .j-ruanjian .j-ruanjian-h {
+    color: #ff8a00;
+    font-size: 30px;
+    line-height: 70px;
+    border-bottom: 1px solid #a70a0b; }
+  .j-ruanjian > p {
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 30px; }
+    .j-ruanjian > p:last-child {
+      padding-top: 0;
+      text-indent: 2em; }
+  .j-ruanjian .j-shop-tab {
+    width: 950px;
+    margin: 10px auto;
+    background: #f9f9f9; }
+    .j-ruanjian .j-shop-tab table {
+      border-left: 1px solid #e0e0e0;
+      border-top: 1px solid #e0e0e0; }
+      .j-ruanjian .j-shop-tab table tr {
+        border: none; }
+      .j-ruanjian .j-shop-tab table td {
+        padding: 0;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        border-right: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0; }
+
+/*# sourceMappingURL=shop.css.map */

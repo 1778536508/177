@@ -1,0 +1,44 @@
+
+		<link rel="stylesheet" href="che/css/yuyue.css" />
+	</head>
+	<body>
+		<div class="yu-box"  ng-controller="jjCar">
+			<header>
+				<a href="#/wd"><img src="che/images/yuyue1.png" class="img1"/></a>
+				<p>降价记录提醒</p>
+			</header>
+			<div class="yu-content">
+				<div class="yu-con1">
+					<img src="che/images/$_03.png" alt="" />
+					<p>您还没有提交降价提醒，好车不等人，快去挑选吧</p>
+					<br /><a href="javascript:;">现在去逛逛</a>
+				</div>
+				<div class="yu-con3">
+					<div></div>
+					<p>为你推荐</p>
+				</div>
+				<div class="yu-con4">
+					<ul>
+						<li ng-repeat="obj in tj">
+							<div>
+								<img src="che/images/{{obj.img}}" alt="" />
+							</div>
+							<div>
+								<p class="p1">
+									<a href="javascript:;">{{obj.p1}}</a>
+								</p>
+								<p class="p2">
+									<a href="javascript:;">{{obj.p2}}</a>
+								</p>
+								<p class="p3">
+									<a href="javascript:;">{{obj.p3}}</a>
+								</p>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,217 @@
+
+
+		<div class="box" ng-controller="homeCtrl">
+			<link rel="stylesheet" href="che/css/wd.css" />
+			<!--头部-->
+			<header>
+				<div class="head1">
+					<a href="javascript:;">
+						<img src="che/images/l-left.png" alt="" class="img1" />
+					</a>
+					<a href="javascript:;">
+						<img src="che/images/l-right.png" class="img2" />
+					</a>
+
+					<img src="che/images/l-img.png" alt="" class="img3" />
+					<p>
+						<a href="javascript:;">立即登陆</a>
+					</p>
+				</div>
+				<div class="bian">
+					<img src="che/images/bian.png"/>
+				</div>
+				<div class="head2">
+					<p>买 家 中 心</p>
+					<ul>
+						<li>
+							<div>
+								<img src="che/images/l-1.png" /><br />
+								<a href="#/yuyue">预约记录</a>
+							</div>
+							<div>
+								<img src="che/images/l-2.png" /><br />
+								<a href="#/kj">砍价记录</a>
+							</div>
+							<div>
+								<img src="che/images/l-3.png" /><br />
+								<a href="#/jj">降价提醒</a>
+							</div>
+							<div>
+								<img src="che/images/l-4.png" /><br />
+								<a href="#/sc">收藏记录</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<img src="che/images/l-5.png" /><br />
+								<a href="#/dy">订阅车源</a>
+							</div>
+							<div>
+								<img src="che/images/l-6.png" /><br />
+								<a href="#/ll">浏览记录</a>
+							</div>
+							<div>
+								<img src="che/images/l-7.png" /><br />
+								<a href="javascript:;">购车贷款</a>
+							</div>
+							<div>
+							</div>
+						</li>
+						<br />
+					</ul>
+				</div>
+			</header>
+			<div style="clear: both;"></div>
+			<div class="content">
+				<br />
+				<div class="con1">
+					<p>买家中心</p>
+					<div>
+						<img src="che/images/l-8.png" /><br />
+						<a href="#/mai">卖车进度</a>
+					</div>
+				</div>
+				<br />
+				<div class="con2">
+					<a href="#/yh">
+						<img src="che/images/l-9.png" alt="" class="con2-i1" />
+						<label>我的优惠</label>
+						<img src="che/images/jt.png" alt="" class="con2-i2" />
+					</a>
+				</div>
+				<br />
+				<div class="con21">
+					<div class="con2">
+						<a href="javascript:;">
+							<img src="che/images/l-10.png" alt="" class="con2-i1" />
+							<label>联系客服</label>
+							<img src="che/images/jt.png" alt="" class="con2-i2" />
+						</a>
+					</div>
+					<div class="con2">
+						<a href="#/yj">
+							<img src="che/images/l-11.png" alt="" class="con2-i1" />
+							<label>意见反馈</label>
+							<img src="che/images/jt.png" alt="" class="con2-i2" />
+						</a>
+					</div>
+				</div>
+				<div class="con3">
+					<div></div>
+					<p>为你推荐</p>
+				</div>
+				<div class="con4">
+					<ul>
+						<li ng-repeat="obj in tj">
+							<div>
+								<img src="che/images/{{obj.img}}" alt="" />
+							</div>
+							<div>
+								<p class="p1">
+									<a href="javascript:;">{{obj.p1}}</a>
+								</p>
+								<p class="p2">
+									<a href="javascript:;">{{obj.p2}}</a>
+								</p>
+								<p class="p3">
+									<a href="javascript:;">{{obj.p3}}</a>
+								</p>
+							</div>
+						</li>
+						<!--<li>
+							<div>
+								<img src="che/images/1.png" alt="" />
+							</div>
+							<div>
+								<p class="p1"><a href="javascript:;">奥迪A6L 2011款2.8FSI 舒适型</a></p>
+								<p class="p2"><a href="javascript:;">2012年/5万公里</a></p>
+								<p class="p3"><a href="javascript:;">23.80万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/2.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">福特福克斯 2011款 两厢1.8L 自动时尚型</a></p>
+								<p class="p2"><a href="javascript:;">2011年/5.8万公里</a></p>
+								<p class="p3"><a href="javascript:;">5.60万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/3.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">大众速腾 2013款 2.0TSI GLI</a></p>
+								<p class="p2"><a href="javascript:;">2014年/8.4万公里</a></p>
+								<p class="p3"><a href="javascript:;">14.30万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/4.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">大众高尔夫 2011款 1.6 自动舒适型</a></p>
+								<p class="p2"><a href="javascript:;">2011年/5.4万公里</a></p>
+								<p class="p3"><a href="javascript:;">7.30万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/5.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">奥迪A6L 2011款2.0 TFSI 自动标准型</a></p>
+								<p class="p2"><a href="javascript:;">2011年/14.4万公里</a></p>
+								<p class="p3"><a href="javascript:;">16.50万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/6.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">奥迪A6L 2012款 30 FSI 舒适型</a></p>
+								<p class="p2"><a href="javascript:;">2012年/8.5万公里</a></p>
+								<p class="p3"><a href="javascript:;">27.00万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/7.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">奥迪A6L 2014款 TFSI 标准型</a></p>
+								<p class="p2"><a href="javascript:;">2014年/3.1万公里</a></p>
+								<p class="p3"><a href="javascript:;">28.50万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/8.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">大众途观 2010款 1.8TSI 自动两驱风尚版</a></p>
+								<p class="p2"><a href="javascript:;">2010年/9.3万公里</a></p>
+								<p class="p3"><a href="javascript:;">11.10万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/9.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">奥迪A6L 2011款2.4L 豪华型</a></p>
+								<p class="p2"><a href="javascript:;">2011年/12.95万公里</a></p>
+								<p class="p3"><a href="javascript:;">19.68万</a></p>
+							</div>
+						</li>
+						<li>
+							<div><img src="che/images/10.png" alt="" /></div>
+							<div>
+								<p class="p1"><a href="javascript:;">宝马5系 2012款 530Li 领先型</a></p>
+								<p class="p2"><a href="javascript:;">2012年/12.4万公里</a></p>
+								<p class="p3"><a href="javascript:;">27.30万</a></p>
+							</div>
+						</li>
+						-->
+					</ul>
+				</div>
+				
+			</div>
+			<footer>
+				<ul>
+					<li ><a href="#/shouye"><img src="che/images1/tb_03.png"/></a><span>首页</span></li>
+					<li><a href="#/vehicle"><img src="che/images/tb_05.png"/></a><span>买车</span></li>
+					<li><a href="#/sell"><img src="che/images/tb_07.png"/></a><span>卖车</span></li>
+					<li class="li1"><a href="#/wd"><img src="che/images1/tb_09.png"/></a><span>我的</span></li>
+				</ul>
+			</footer>
+		</div>
+

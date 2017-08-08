@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%; }
+
+.head {
+  width: 100%;
+  height: 7.2rem; }
+  .head header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 3.8rem;
+    background: #111111;
+    text-align: center;
+    line-height: 3.8rem; }
+    .head header label {
+      font-size: 1.8rem;
+      color: white; }
+  .head .list {
+    position: fixed;
+    left: 0;
+    top: 3.8rem;
+    z-index: 9;
+    width: 100%;
+    height: 3.4rem;
+    background: white; }
+    .head .list ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      -webkit-justify-content: space-around;
+      line-height: 3.4rem; }
+      .head .list ul li {
+        height: 100%; }
+        .head .list ul li a img {
+          width: 0.8rem;
+          height: 1.3rem;
+          margin-top: 1rem; }
+
+.content {
+  width: 100%; }
+  .content .banner {
+    width: 100%; }
+    .content .banner .swiper-container {
+      width: 100%; }
+      .content .banner .swiper-container .swiper-wrapper {
+        width: 100%; }
+        .content .banner .swiper-container .swiper-wrapper .swiper-slide {
+          width: 100%; }
+          .content .banner .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 100%; }
+  .content .text {
+    width: 100%;
+    background: #f9f9f9; }
+    .content .text ul {
+      width: 100%;
+      zoom: 1; }
+      .content .text ul:after {
+        display: block;
+        clear: both;
+        content: ''; }
+      .content .text ul li {
+        float: left;
+        width: 50%;
+        padding: 0.5rem; }
+        .content .text ul li a {
+          display: block;
+          width: 100%;
+          height: 17.1rem;
+          background: white;
+          padding: 0.5rem; }
+          .content .text ul li a img {
+            width: 100%; }
+          .content .text ul li a p {
+            font-size: 1.3rem;
+            color: #f22f2f; }
+            .content .text ul li a p:nth-child(2) {
+              font-size: 1rem;
+              color: #dadada;
+              font-weight: bold; }
+
+/*# sourceMappingURL=index.css.map */

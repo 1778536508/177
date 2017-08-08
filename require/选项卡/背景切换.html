@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>背景颜色</title>
+	</head>
+	<body>
+		<input type="button" value="red"/>
+		<input type="button" value="blue"/>
+		<input type="button" value="gold"/>
+		<input type="button" value="magenta"/>
+		<input type="button" value="aqua"/>
+		<input type="button" value="blueviolet"/>
+		<input type="button" value="mediumspringgreen"/>
+		
+		<script src="js/jquery-3.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookies.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		
+		
+			$("input").on("click",function(){
+				console.log($(this).val());
+				setCookie("back",$(this).val(),3);
+				$("body").css("background",""+getCookie("back")+"");
+			})
+			$("body").css("background",""+getCookie("back")+"");
+			
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,43 @@
+.t-box{
+    width: 1000px;
+    margin: 0 auto;
+    .t-msg{
+        margin: 20px 0;
+        font-size: 30px;
+        color: #ff8a00;
+    }
+    ul{
+        border-top: 1px solid #a70a0b;
+        li{
+            border-bottom: 1px solid #999;
+            p{
+                font-size: 16px;
+                color: #888;
+                margin: 20px 0;
+                &:last-child{
+                    text-align: right;
+                }
+            }
+            div{
+                font-size: 14px;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+.t-btn{
+    width: 350px;
+    margin: 38px auto 72px;
+    text-align: center;
+    button{
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: 1px solid #999;
+        border-radius: 3px;
+    }
+}
+.t-button{
+    border: none !important;
+    background: #ff8a00 !important;
+}

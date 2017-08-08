@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "微软雅黑"; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%; }
+
+.box {
+  background: url(../images/banner.jpg);
+  background-size: 100% 120%;
+  background-position: 0 50%;
+  overflow: hidden; }
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.3); }
+  .nav .nav_dao {
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    zoom: 1; }
+    .nav .nav_dao:after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .nav .nav_dao p {
+      float: left; }
+      .nav .nav_dao p:nth-child(1) {
+        width: 210px;
+        height: 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        margin-top: 20px; }
+        .nav .nav_dao p:nth-child(1) img {
+          width: 174px;
+          height: 42px;
+          margin-top: -10px; }
+      .nav .nav_dao p:nth-child(3) {
+        width: 118px;
+        height: 100%;
+        text-align: center;
+        line-height: 60px; }
+        .nav .nav_dao p:nth-child(3) a {
+          color: white;
+          margin-left: 20px; }
+    .nav .nav_dao ul {
+      float: left;
+      zoom: 1;
+      height: 100%;
+      padding-left: 30px; }
+      .nav .nav_dao ul:after {
+        display: block;
+        clear: both;
+        content: ''; }
+      .nav .nav_dao ul li {
+        width: 110px;
+        height: 100%;
+        float: left;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer; }
+        .nav .nav_dao ul li a {
+          color: white; }
+        .nav .nav_dao ul li.in {
+          background: rgba(255, 255, 255, 0.3); }
+      .nav .nav_dao ul li:hover {
+        background: rgba(255, 255, 255, 0.3); }
+
+.sou {
+  width: 590px;
+  height: 52px;
+  zoom: 1;
+  margin-left: 381px;
+  margin-top: 149px; }
+  .sou:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .sou input {
+    width: 532px;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    padding-left: 10px;
+    outline: none; }
+  .sou a img {
+    width: 56px;
+    height: 100%;
+    float: left; }
+  .sou a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 999; }
+
+.content {
+  width: 532px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 261px;
+  left: 382px;
+  overflow: hidden;
+  display: none;
+  z-index: 999; }
+  .content ol {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #EBEBEB; }
+    .content ol li {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      cursor: pointer;
+      padding-left: 10px; }
+    .content ol li:hover {
+      background: #F8F8F8; }
+
+.list {
+  width: 100%; }
+  .list p {
+    font-size: 16px;
+    color: #1e1900;
+    text-align: center;
+    margin-top: 23px; }
+    .list p a {
+      font-size: 16px;
+      color: #1e1900;
+      margin-left: 28px; }
+    .list p a:hover {
+      text-decoration: underline; }
+
+.footer {
+  width: 100%;
+  height: 154px;
+  background: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .footer .footer_list {
+    width: 1020px;
+    margin: 0 auto;
+    zoom: 1; }
+    .footer .footer_list:after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .footer .footer_list ul {
+      width: 900px;
+      float: left;
+      zoom: 1;
+      padding-top: 10px; }
+      .footer .footer_list ul:after {
+        display: block;
+        clear: both;
+        content: ''; }
+      .footer .footer_list ul li {
+        float: left;
+        width: 25%;
+        margin-top: 2px; }
+        .footer .footer_list ul li a {
+          font-size: 12px; }
+        .footer .footer_list ul li a:hover {
+          text-decoration: underline; }
+    .footer .footer_list div {
+      float: right;
+      margin-top: 20px; }
+      .footer .footer_list div img {
+        width: 93px;
+        height: 93px; }
+  .footer p {
+    text-align: center;
+    font-size: 12px;
+    position: relative; }
+    .footer p img:nth-child(1) {
+      width: 15px;
+      height: 16px;
+      position: absolute;
+      left: 708px;
+      bottom: 0; }
+
+/*# sourceMappingURL=ndy_book.css.map */

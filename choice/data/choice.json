@@ -1,0 +1,50 @@
+{
+	"shop":{
+			"img":"title.png",
+			"im":"logo.png",
+			"h":"北京博瑞祥恒4S店",
+			"num":"5分",
+			"text":"北京朝阳东直门外左家庄路2号",
+			"con":"4s店指导价￥987",
+			"km":"14.5km"
+			},
+	"icon":[{"zi":"fa fa-fw fa-star"},
+			{"zi":"fa fa-fw fa-star"},
+			{"zi":"fa fa-fw fa-star"},
+			{"zi":"fa fa-fw fa-star"},
+			{"zi":"fa fa-fw fa-star"}
+			],
+	"conten":[{
+			"date":"8:30-10:00",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"10:00-11:30",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"13:00-14:30",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"14:30-16:00",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"8:30-10:00",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"10:00-11:30",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"13:00-14:30",
+			"money":"￥803",
+			"bug":"提交"
+			},{
+			"date":"14:30-16:00",
+			"money":"￥803",
+			"bug":"提交"
+			}]
+}

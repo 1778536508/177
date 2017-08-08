@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;  
+    font-family: "微软雅黑";  
+}
+%full{
+    width: 100%;
+    height: 100%;
+}
+@mixin pos($p:absolute){
+    position: $p;
+}
+@mixin clearfix{
+    zoom: 1;
+    &:after{
+      display: block;
+      clear: both;
+      content: '';
+    }
+}
+html,body,.box{
+    @extend %full;
+}
+.head{
+    width: 100%;
+    height: 7.2rem;
+    header{
+        @include pos(fixed);
+        left: 0;
+        top: 0;
+        z-index: 9;
+        width: 100%;
+        height: 3.8rem;
+        background: #111111;
+        text-align: center;
+        line-height: 3.8rem;
+        label{
+            font-size: 1.8rem;
+            color: white;
+        }
+    }
+    .list{
+        @include pos(fixed);
+        left: 0;
+        top: 3.8rem;
+        z-index: 9;
+        width: 100%;
+        height: 3.4rem;
+        background: white;
+//      border: 1px solid;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            -webkit-justify-content: space-around;
+            line-height: 3.4rem;
+            li{
+                height: 100%;
+                a{
+                    img{
+                        width: 0.8rem;
+                        height: 1.3rem;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content{
+    width: 100%;
+    .banner{
+        width: 100%;
+        .swiper-container{
+            width: 100%;
+            .swiper-wrapper{
+                width: 100%;
+                .swiper-slide{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .text{
+        width: 100%;
+        background: #f9f9f9;
+        ul{
+            width: 100%;
+            @include clearfix;
+            li{
+                float: left;
+                width: 50%;
+                padding: 0.5rem;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 17.1rem;
+                    background: white;
+                    padding: 0.5rem;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                        color: #f22f2f;
+                        &:nth-child(2){
+                            font-size: 1rem;
+                            color: #dadada;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+
+.t-title{
+    font-size: 30px;
+    color: #ff8a00;
+}
+.t-box{
+    width: 1000px;
+    margin:32px auto 0;
+    .t-list{
+        padding:32px 15px;
+        font-size: 16px;
+    }
+    .t-menu{
+        width: 900px;
+        margin: 0 auto;
+        
+        li{
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            padding: 0 35px;
+            p{
+                margin-top: 5px;
+            }
+        }
+    }
+    .t-content{
+        margin-top: 16px;
+        padding-top: 60px;
+        border-top: 1px solid #a70a0b;
+        .t-subMenu{
+            width: 100%;
+            div{
+                float: left;
+            }
+            ul{
+                float: right;
+                width: 412px;
+                list-style-image: url(../img/introduce_img_30.png);
+                font-size: 14px;
+                margin-left: 36px;
+                li{
+                    margin-bottom: 10px;
+                   &>p{
+                       margin: 20px 0;
+                       color: #888;
+                        p{
+                        margin: 5px 0;
+                        color: #888;
+                        }
+                   }
+                }
+            }
+        }
+    }
+}
+.t-msg{
+    font-size: 30px;
+    color: #ff8a00;
+    margin: 30px 10px;
+
+}
+.t-hot{
+    width: 100%;
+    background: #f8f8f8;
+    overflow: hidden;
+    .t-list1{
+        width: 1000px;
+        margin: 0 auto;
+        ul{
+            list-style-image: url(../img/introduce_img_30.png);
+            font-size: 14px;
+            margin-left: 30px;
+            margin-bottom: 36px;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+.t-list2{
+    width: 1000px;
+    margin: 0 auto;
+    ul{
+        list-style-image: url(../img/introduce_img_30.png);
+        font-size: 14px;
+        margin-left: 30px;
+        div{
+            padding: 20px 14px;
+            color: #999;
+        }
+    }
+}
+.t-ul{
+    li{
+        span{
+            color: #999;
+        }
+    }
+}

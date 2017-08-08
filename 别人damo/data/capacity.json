@@ -1,0 +1,27 @@
+[{
+	"title":"集群通行业定制终端",
+	"content":[
+		{"imgsrc":"../img/capacity-phone1.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone2.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone4.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone3.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone1.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone3.jpg","txt":"Z502W 高端智能对讲终端"}
+	]
+},
+{
+	"title":"集群通配件",
+	"content":[
+		{"imgsrc":"../img/capacity-phone1.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone2.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone4.jpg","txt":"Z502W 高端智能对讲终端"},
+		{"imgsrc":"../img/capacity-phone3.jpg","txt":"Z502W 高端智能对讲终端"}
+	]
+},
+{
+	"title":"管理平台",
+	"content":[
+		{"imgsrc":"../img/capacity-map1.jpg","title":"可将终端的GPS位置信息及状态","txt":"实时回传到调度台能实现对终端的24小时行动轨迹回放可将终端的 GPS位置信息及状态实时回传到调度台能实现对终端的24小时行动 轨迹回放及状态实时回传到调度。"},
+		{"imgsrc":"../img/capacity-map1.jpg","title":"可将终端的GPS位置信息及状态","txt":"实时回传到调度台能实现对终端的24小时行动轨迹回放可将终端的 GPS位置信息及状态实时回传到调度台能实现对终端的24小时行动 轨迹回放及状态实时回传到调度。"}
+	]
+}]

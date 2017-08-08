@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul class="maintain-content-list">
+				<li ng-repeat="list in datas track by $index">
+					<div>
+						<!--{{list.checked}}-->
+						<input type="checkbox" ng-click='add($index)' ng-checked="{{list.checked}}" id="{{list.ckid}}" class="chk"/>
+						<label for="{{list.ckid}}"><span>√</span></label>
+					</div>
+					<div>
+						{{list.product}}<span>{{list.introduce}}</span>
+					</div>
+					<div>
+						<s>￥<span>{{list.originalPrice}}</span></s>
+						<span>￥<span>{{list.presentPrice}}</span></span>
+					</div>
+				</li>
+			</ul>
+			
+		<script type="text/javascript">
+			
+			
+			 app.controller('ctrl',function($scope,$http){
+		    	$scope.carmodel='大众 宝来';
+		    	$scope.carstyle='2016款 1.6L 手动 时尚型';
+		    	$scope.sumNumber = 0;
+		    	$scope.sumoriginalPrice = 0;
+		    	$scope.sumpresentPrice = 0;
+		    	
+		    	
+		        $http({
+		            method:'get',
+		            url:'data/data.json'
+		        }).then(function(res){
+		            $scope.datas = res.data.list
+		        },function(){
+		        })
+		        
+		        
+		        $scope.add = function(index){
+		        	let aInp=angular.element(document.getElementsByClassName('chk'));
+		        	$scope.datas[index].checked = aInp[index].checked;
+		        	//记数
+		        	var sum = 0;
+		        	var originalPrice = 0;
+		        	var presentPrice = 0;
+		        	for(var i in $scope.datas){
+		        		if($scope.datas[i].checked){
+		        			sum++;
+		        			originalPrice+=$scope.datas[i].originalPrice-0;
+		        			presentPrice+=$scope.datas[i].presentPrice-0;
+		        		}
+		        	}
+		        	$scope.sumNumber = sum;
+		        	$scope.sumoriginalPrice = originalPrice;
+		        	$scope.sumpresentPrice = presentPrice;
+		        	if(sum==0){
+		        		document.getElementById('sum').style.display = 'none';
+		        	}else{
+		        		document.getElementById('sum').style.display = 'block';
+		        	}
+		        }
+		    })
+			
+			
+			
+		</script>	
+		
+	</body>
+</html>
+
+
+<!--{
+	"list":[
+		{"product":"机油","introduce":"4.0L","originalPrice":"198","presentPrice":"149","checked":false,"ckid":"ck1"},
+		{"product":"机油滤清器","introduce":"原厂件","originalPrice":"62","presentPrice":"47","checked":false,"ckid":"ck2"},
+		{"product":"火花塞","introduce":"原厂件","originalPrice":"190","presentPrice":"143","checked":false,"ckid":"ck3"},
+		{"product":"空调滤清器","introduce":"原厂件","originalPrice":"55","presentPrice":"41","checked":false,"ckid":"ck4"},
+		{"product":"空气滤清器","introduce":"原厂件","originalPrice":"65","presentPrice":"48","checked":false,"ckid":"ck5"},
+		{"product":"变速箱油","introduce":"原厂件","originalPrice":"187","presentPrice":"140","checked":false,"ckid":"ck6"},
+		{"product":"刹车油","introduce":"原厂件","originalPrice":"75","presentPrice":"56","checked":false,"ckid":"ck7"},
+		{"product":"机油","introduce":"4.0L","originalPrice":"198","presentPrice":"149","checked":false,"ckid":"ck8"},
+		{"product":"机油滤清器","introduce":"原厂件","originalPrice":"62","presentPrice":"47","checked":false,"ckid":"ck9"}
+	]
+}-->

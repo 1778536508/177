@@ -1,0 +1,22 @@
+{
+	"list":[{"title":"3万以下"},
+			{"title":"大众","img":"lo_03.png"},
+			{"title":"宝马","img":"lo_05.png"},
+			{"title":"自动挡"},
+			{"title":"3-5万"},
+			{"title":"丰田","img":"lo_09.png"},
+			{"title":"奔驰","img":"lo_10.png"},
+			{"title":"SUV"},
+			{"title":"5-10万"},
+			{"title":"现代","img":"lo_13.png"},
+			{"title":"福特","img":"lo_14.png"},
+			{"title":"车龄1-3年"},
+			{"title":"10-15万"},
+			{"title":"本田","img":"lo_17.png"},
+			{"title":"日产","img":"lo_18.png"},
+			{"title":"年龄3-5年"},
+			{"title":"15-20万"},
+			{"title":"奥迪","img":"lo_21.png"},
+			{"title":"别克","img":"lo_22.png"},
+			{"title":"促销车"}]
+}

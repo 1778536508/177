@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="che/css/perm.css"/>
+		<div class="box" ng-controller="name1">
+			<div class="head">
+				<header>
+					<a href="#/guazi" class="left"><span class="fa fa-fw fa-angle-left"></span></a>
+					<label>瓜子置换新车</label>
+				</header>
+			</div>
+			<div class="content">
+				<div class="banner">
+					<img src="che/img/n_02.png"/>
+				</div>
+				<div class="content_list">
+					<div class="list">
+						<ul>
+							<li>
+								<span class="fa fa-fw fa-check-circle"></span><span>二手车多卖20%</span>
+							</li>
+							<li>
+								<span class="fa fa-fw fa-check-circle"></span><span>新车享低价</span>
+							</li>
+							<li>
+								<span class="fa fa-fw fa-check-circle"></span><span>1对1购车顾问</span>
+							</li>
+						</ul>
+					</div>
+					<div class="inp">
+						<input type="text" placeholder="请输入手机号码"/>
+					</div>
+					<div class="order">
+						<p>
+							<a href="javascript:void(0);">免费预约</a>
+						</p>
+					</div>
+
+				</div>
+				
+				<div class="content_fenlei">
+					<h3>好车抢购</h3>
+					<ul>
+						<li ng-repeat="x in data"><img src="che/img/{{x}}"/></li>
+						<!--<li><img src="img/n_05.png"/></li>
+						<li><img src="img/n_05.png"/></li>
+						<li><img src="img/n_05.png"/></li>
+						<li><img src="img/n_05.png"/></li>-->
+					</ul>
+				</div>
+				
+				<div class="content_flow">
+					<h3>瓜子置换购车流程</h3>
+					<ul>
+						<li>
+							<img src="che/img/n_17.png"/>
+							<h4>在线购车</h4>
+							<p>提交手机号，评估师免费上门检测二手车</p>
+						</li>
+						<li>
+							<img src="che/img/n_20.png"/>
+							<h4>在线购车电话回访</h4>
+							<p>交手机号，评估师免费上门检测二手车</p>
+						</li>
+						<li>
+							<img src="che/img/n_22.png"/>
+							<h4>到店购车</h4>
+							<p>提交手机号，评估师免费上门检测二手车</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="content_footer">
+					<div class="phone">
+						<input type="text" placeholder="请输入手机号"/>
+						<p>
+							<a href="javascript:void(0);">免费预约</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>

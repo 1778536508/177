@@ -1,0 +1,50 @@
+
+<div ng-controller="myapp2">
+<link type="text/css" rel="stylesheet" href="che/css2/text.css">
+    <header>
+        <a href="#/vehicle"></a>
+        <label>品牌选择</label>
+    </header>
+    <div class="content">
+        <!--历史浏览品牌-->
+        <h4 ng-bind="list.h4"></h4>
+        <ul>
+            <li ng-repeat="good in ul"><a href="javascript:;"><img ng-src="che/{{good.src}}"></a><br><span ng-bind="good.shuju"></span></li>
+        </ul>
+        <div style="clear: both"></div>
+        <!--热门品牌-->
+        <h4 ng-bind="list1.h4"></h4>
+        <ul>
+            <li ng-repeat="good1 in ul1"><a href="javascript:;"><img ng-src="che/{{good1.src}}"></a><br><span ng-bind="good1.shuju"></span></li>
+        </ul>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="body-a">
+        <!-- *号开头-->
+        <div class="header">*</div>
+        <ul>
+            <li>
+                <a href="#">
+                    <dl>
+                        <dd>不限品牌</dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+        <!-- 字母开头-->
+        <div ng-repeat="good2 in list2">
+            <div class="header" ng-bind="good2.biaoti">*</div>
+            <ul>
+                <li ng-repeat="good3 in good2.ul">
+                    <a href="javascript:;">
+                        <dl>
+                            <dt><img ng-src="che/{{good3.src}}"></dt>
+                            <dd ng-bind="good3.dd"></dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

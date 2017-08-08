@@ -1,0 +1,7 @@
+[
+	{"Bol": false,"items":"0","id":"select1","name":"机油","rise":"4.0L","cost":"62","sign":"￥","cash":47},
+	{"Bol": false,"items":"1","id":"select2","name":"火花塞","rise":"原厂件","cost":"190","sign":"￥","cash":143},
+	{"Bol": false,"items":"2","id":"select3","name":"空气滤清器","rise":"原厂件","cost":"55","sign":"￥","cash":41},
+	{"Bol": false,"items":"3","id":"select4","name":"变速油箱","rise":"原厂件","cost":"48","sign":"￥","cash":48},
+	{"Bol": false,"items":"4","id":"select5","name":"刹车油","rise":"原厂件","cost":"187","sign":"￥","cash":140}
+]

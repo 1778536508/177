@@ -1,0 +1,30 @@
+.origin {
+  color: #ff8a00; }
+
+.fc-termOfService-content {
+  width: 1000px;
+  margin: 38px auto 66px; }
+  .fc-termOfService-content > h1 {
+    width: 100%;
+    background: #A38C71;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 28px; }
+  .fc-termOfService-content dl {
+    list-style: none;
+    background: #fff;
+    font-size: 16px;
+    margin-top: 56px;
+    line-height: 30px; }
+    .fc-termOfService-content dl dt {
+      font-weight: normal;
+      margin-top: 42px;
+      line-height: 30px; }
+    .fc-termOfService-content dl dd {
+      line-height: 30px; }
+    .fc-termOfService-content dl p {
+      text-align: right;
+      margin-top: 74px; }
+
+/*# sourceMappingURL=termOfService.css.map */

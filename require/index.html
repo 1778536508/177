@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+		<!--假定我们自己的代码文件是main.js，也放在js目录下面。那么，只需要写成下面这样就行了-->
+		<script src="js/require.js" data-main="js/main"></script>
+		
+		
+		<script type="text/javascript">
+			//假定主模块依赖jquery、Zepto, swiper这三个模块，main.js就可以这样写：
+			require(['jquery', 'Zepto', 'swiper'], function (){
+		　　　　		// some code here
+					//执行的代码
+					//require.js会先加载jQuery、Zepto, swiper，然后再运行回调函数。主模块的代码就写在回调函数中
+		　　});
+			
+			
+			
+			
+		   //使用require.config()方法，我们可以对模块的加载行为进行自定义。
+		   //require.config()就写在主模块（main.js）的头部。参数就是一个对象，这个对象的paths属性指定各个模块的加载路径。
+			require.config({
+		　　　　paths: {
+		　　　　　　"jquery": "jquery.min",
+		　　　　　　"underscore": "Zepto.min",
+		　　　　　　"backbone": "swiper.min"
+		　　　　}
+		　　});
+		
+		
+		
+		//另一种则是直接改变基目录（baseUrl）。
+		　　require.config({
+		　　　　baseUrl: "js/main",
+		　　　　paths: {
+		　　　　　　"jquery": "jquery.min",
+		　　　　　　"underscore": "underscore.min",
+		　　　　　　"backbone": "backbone.min"
+		　　　　}
+		　　});
+		
+		//如果某个模块在另一台主机上，也可以直接指定它的网址，比如：
+		　　require.config({
+		　　　　paths: {
+		　　　　　　"jquery": "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min"
+		　　　　}
+		　　});
+		
+		
+		
+		//AMD模块的写法
+		//具体来说，就是模块必须采用特定的define()函数来定义。如果一个模块不依赖其他模块，那么可以直接定义在define()函数之中。
+		//假定现在有一个math.js文件，它定义了一个math模块。那么，math.js就要这样写
+		// math.js
+		　　define(function (){
+		　　　　//执行的代码
+		　　});
+			
+		</script>
+		
+		
+	</body>
+</html>
+<script src="js/require.js" type="text/javascript" charset="utf-8"></script>

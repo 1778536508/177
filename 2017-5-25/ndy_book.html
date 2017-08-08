@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="home/css/ndy_book.css"/>
+		<link rel="stylesheet" type="text/css" href="home/css/reset.css"/>
+		<script src="home/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="box">
+			
+			<div class="nav">
+				<div class="nav_dao">
+					<p class="logo"><img src="home/images/logo.png"/></p>
+					<ul>
+						<li class="in"><a href="javascript:void(0);">首页</a></li>
+						<li><a href="javascript:void(0);">公司简介</a></li>
+						<li><a href="javascript:void(0);">社会招聘</a></li>
+						<li><a href="javascript:void(0);">校园招聘</a></li>
+						<li><a href="javascript:void(0);">猎头岗位</a></li>
+						<li><a href="javascript:void(0);">内部推荐</a></li>
+					</ul>
+					<p class="deng">
+						<a href="javascript:void(0);">登录</a>
+						<a href="javascript:void(0);">注册</a>
+					</p>
+				</div>
+			</div>
+			
+			<div class="sou">
+				<input type="text" placeholder="请输入职位关键字" id="sou"/>
+				<a href="javascript:void(0);" id="seek"><img src="home/images/sou.png"/></a>
+			</div>
+			<div class="content" id="content">
+				<ol id="pice">
+					
+				</ol>
+			</div>
+			<div class="list">
+				<p>
+					热门搜索:
+					<a href="javascript:void(0);">销售sa</a>
+					<a href="javascript:void(0);">JAVA</a>
+					<a href="javascript:void(0);">项目</a>
+					<a href="javascript:void(0);">业务培训</a>
+					<a href="javascript:void(0);">需求分析师</a>
+				</p>
+			</div>
+			
+			
+			<div class="footer">
+				<div class="footer_list">
+					<ul>
+						<li><h3>热招职位</h3></li>
+						<li><a href="javascript:void(0);">更多>></a></li>
+						<li><h3>长招职业</h3></li>
+						<li><a href="javascript:void(0);">更多>></a></li>
+						<li><a href="javascript:void(0);">风控专员(小货)</a></li>
+						<li><a href="javascript:void(0);">薪酬绩效经理</a></li>
+						<li><a href="javascript:void(0);">风控专员(小货)</a></li>
+						<li><a href="javascript:void(0);">风控-数据分析经理</a></li>
+						<li><a href="javascript:void(0);">产品专员</a></li>
+						<li><a href="javascript:void(0);">风控-数据分析经理</a></li>
+						<li><a href="javascript:void(0);">审核政策&流程主管/专员</a></li>
+						<li><a href="javascript:void(0);">机器学习工程师</a></li>
+						<li><a href="javascript:void(0);">影视制作</a></li>
+						<li><a href="javascript:void(0);">审核政策&流程主管/专员</a></li>
+						<li><a href="javascript:void(0);">大数据开发工程师</a></li>
+						<li><a href="javascript:void(0);">资金管理主管(资金&预算)</a></li>
+					</ul>
+					<div>
+						<img src="home/images/er.png"/>
+					</div>
+				</div>
+				<p>©2017  深圳市佰仟金融服务限公司   京ICP备05051632号 &nbsp;&nbsp;&nbsp;&nbsp;<img src="home/images/beian.png"/>&nbsp;京公网安备 11010802020454号&nbsp;&nbsp;<img src="home/images/th.gif"></p>
+				
+			</div>
+			
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+			
+			var te = document.getElementById("sou");
+			var pi = document.getElementById("pice");
+			var so = document.getElementById("suo");
+			
+			te.onkeyup = function(){
+				$("#content").css('display','block');
+				pi.innerHTML = '';
+				$.ajax({
+					dataType:"jsonp",
+					url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?",
+					data:{
+						wd:te.value
+					},
+					jsonp:"cb",
+					success:function(data){
+						var del = data.s;
+						console.log(del);
+						for(var i =0; i < del.length;i++){
+							var con = document.createElement("li");
+							con.innerHTML = del[i];
+							pi.appendChild(con);
+						}
+					}
+				})
+				//判断当搜索框中没有内容时将ol隐藏
+				if(te.value == ''){
+					$("#content").css('display','none');
+				}
+			}
+			
+			
+			//点击弹出的内容放到搜索框中
+			$("#pice").on('click','li',function(){
+					var li = $(this).html();
+					$("#sou").val(li);
+					$("#content").css('display','none');
+				})
+
+			//点击搜索
+			$("#seek").click(function(){
+				
+			})
+			
+			
+			
+			
+		</script>

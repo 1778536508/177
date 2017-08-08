@@ -1,0 +1,42 @@
+
+<div ng-controller="myCtrl3">
+    <link rel="stylesheet" href="che/css/jinrong.css"/>
+    <div class="head">
+        <span><a href="#/shouye"></a></span>
+        <span>瓜子金融</span>
+        <span></span>
+    </div>
+    <div class="cont">
+        <img src="che/images/banner_02.png" alt=""/>
+        <ul>
+            <li><img src="che/images/font1_03.png"><br/>
+                <span>低首付</span><br/><span>首付三成享豪车</span></li>
+            <li><img src="che/images/font2_03.png"><br/>
+                <span>低月供</span><br/><span>分期还款无压力</span></li>
+            <li><img src="che/images/font3_03.png"><br/>
+                <span>瓜子认证</span><br/><span>大平台有保障</span></li>
+        </ul>
+        <div class="ban">
+            <div>
+                <div><a href="">查询额度</a></div>
+            </div>
+            <div>
+                <div><a href="">立即申请</a></div>
+            </div>
+        </div>
+        <div class="list">
+           <p>{{res.title}}</p>
+           <ul ng-repeat="it in res.list">
+               <li>
+                   <p><span><img src="che/images/{{it.img}}"></span>{{it.tit}}</p>
+                   <p>{{it.content}}</p>
+               </li>
+           </ul>
+        </div>
+        <p class="kong"></p>
+    </div>
+    <div class="foot">
+        <a href="">立即申请</a>
+    </div>
+</div>
+
